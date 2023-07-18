@@ -1,0 +1,117 @@
+@media (max-width:1235px) {
+
+
+    /************* Start Of Header *************/
+    .SocialMedia-ColorPallet {
+        justify-content: center;
+    }
+
+    .SocialMedia__List {
+        display: none;
+    }
+
+    .ThemeSchemePicker__Fieldset--hidden {
+        width: 30px;
+        height: 82px;
+        gap: 25px;
+    }
+
+    .ThemeSchemePicker__Input {
+        width: 10px;
+        height: 10px;
+    }
+
+    .ThemePackages {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+
+    .Navigation {
+        height: 82px;
+    }
+
+    .NavMenu {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .Menu {
+        display: none;
+    }
+
+    .Menu__Item {
+        width: 100%;
+    }
+
+    .Menu__Links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .BurgerMenu__Icon {
+        opacity: 1;
+    }
+
+    .Menu {
+        height: 100vh;
+        background-color: var(--Color-MenuResponsive-Bg);
+        opacity: 0.9;
+        padding: 100px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(100%, 0);
+        z-index: 5;
+        transition: 1s;
+    }
+
+    .BurgerMenu__Input--hidden:checked~.MenuContainer>.Menu {
+        transform: translate(0, 0);
+    }
+
+    .SearchSection {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transform: translate(0, 50%);
+    }
+
+    .Slogan {
+        padding: 0 40px;
+    }
+
+    .Slogan__Title--size-big {
+        font-size: 1.5em;
+    }
+
+    .ContainerServices {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .MagicalBox {
+        width: var(--Width-MagicBoxes-Responsive);
+    }
+
+/************* End Of Header **************/
+
+
+
+
+/************* Start Of Main **************/
+
+
+
+/************** End Of Main **************/
+
+
+
+}

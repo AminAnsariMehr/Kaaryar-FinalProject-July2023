@@ -1,0 +1,251 @@
+/* --------------- Start Of Theme Packages ---------------- */
+
+/* -- CheckBox Input -- */
+.ThemePackages__Input {
+    display: none;
+}
+
+.ThemePackages__Label {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- Pallet Icon -- */
+.ThemePackages__PalletIcon {
+    color: var(--Color-ThemePalettIcon-Text);
+    padding: 2px 4px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ThemePackages__PalletIcon:hover {
+    color: var(--Color-ThemePalettIconHover-Text);
+    background-color: var(--Color-ThemePalettIconHover-Bg);
+}
+
+.ThemePackages__Input:checked ~ .ThemeSchemePicker {
+    left: 0;
+    transform: translate(0, 0);
+}
+
+/* --------- Theme Scheme Picker --------- */
+.ThemeSchemePicker {
+    border-radius: 0 0 1rem 1rem;
+    position: absolute;
+    left: 0;
+    transform: translate(-110%, 0);
+    transition: all 0.7s;
+    z-index: 1;
+}
+
+.ThemeSchemePicker__Fieldset--hidden {
+    width: fit-content;
+    height: 130px;
+    background-color: var(--Color-ThemeSchemePicker-Bg);
+    padding: 1.04rem 0.8rem;
+    border: 0;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ThemeSchemePicker__Label--Visually-hidden,
+.ThemeSchemePicker__Legend--Visually-hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.ThemeSchemePicker__Input {
+    width: 0.75rem;
+    height: 0.75rem;
+    appearance: none;
+    outline: 3px solid var(--radio-color);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+.ThemeSchemePicker__Input:checked {
+    background-color: var(--radio-color);
+}
+
+.ThemeSchemePicker__Input--Light-Color {
+    --radio-color: #084A79;
+}
+
+
+.ThemeSchemePicker__Input--NeonLight-Color {
+    --radio-color: #FFAD00;
+}
+
+
+
+:root:has(.ThemeSchemePicker__Input--Light-Color:checked) {
+
+    /*---  default Theme ---*/
+
+}
+
+
+:root:has(.ThemeSchemePicker__Input--NeonLight-Color:checked) {
+    /* --- Pseudo Selection --- */
+    --Color-Selection-Text: #FFAD00;
+    --Color-Selection-Bg: #031321;
+
+    /* --- Social Media --- */
+    --Color-SocialMedia-Bg: #FFAD00;
+    --Color-SocialMedia-Text: #031321;
+    --Color-SocialMedia-Border: #e6a211;
+
+    /* --- Theme Picker --- */
+    --Color-ThemePalettIcon-Text: #031321;
+    --Color-ThemePalettIconHover-Text: #2196f3;
+    --Color-ThemePalettIconHover-Bg: #031321;
+    --Color-ThemeSchemePicker-Bg: #DB3EB1;
+
+    /* --- Navigation Bar --- */
+    --Color-Navigation-Bg: #031321;
+
+    /* -------- Logo -------- */
+    --Color-StrokeLogoBorder-Text: #91880e 1px;
+    --Color-StrokeLogoFill-Text: transparent;
+    --Radius-ImageLogo-Border: 20px;
+    --Color-DescLogo-Text: #FFAD00;
+    --Color-LinearTextLogo-Bg: linear-gradient(315deg, #FFAD00, #0a2236, #FFAD00, #0a2236, #FFAD00, #0a2236);
+
+    /* ------- Menu ------- */
+    --Color-MenuLinks-Text: #2196f3;
+    --Color-MenuLinksHover-Text: #255784;
+    --Color-MenuLinksHover-Bg: #2196f3;
+    --Color-MenuLinksHover-Border: #2196f3;
+    --Color-MenuLinksHover-Shadow: #2196f3;
+    --Transition-MenuLinksHover-Delay: 1s;
+    --Color-MenuLinksLinear-Top: linear-gradient(90deg, transparent, #2196f3);
+    --Color-MenuLinksLinear-Right: linear-gradient(180deg, transparent, #2196f3);
+    --Color-MenuLinksLinear-Bottom: linear-gradient(270deg, transparent, #2196f3);
+    --Color-MenuLinksLinear-Left: linear-gradient(360deg, transparent, #2196f3);
+    --Color-MenuLinksStaticHover-Text: #031321;
+    --Color-MenuLinksStaticHover-Bg: #2196f3;
+
+    --Color-MenuResponsive-Bg: #031321;
+
+    /* --- SearchBox Section --- */
+    --Color-SearchIcon-Text: #2196f3;
+    --Color-SearchIconHover-Text: #255784;
+    --Color-SearchBox-Bg: #FFAD00;
+    --Color-SearchBox-Shadow: none;
+    --Radius-SearchBox-Border: 4px;
+    --Color-SearchBoxAfter-Bg: #FFAD00;
+    --Color-SearchPlaceHoder-Text: #031321;
+    --Color-InputSearch-Bg: #008cffb8;
+    --Color-InputSearch-Border: #2195f3b8;
+    --Color-SearchIcon2-Text: #2196f3;
+    --Color-SearchIcon2-Bg: #031321;
+
+
+    /* ----- Buerger Menu ----- */
+    --Color-BurgerIcon-Bg: #2196f3;
+
+
+    /* --- Slogan Complex --- */
+    --Color-SloganTitle-Text: #ffad00;
+    --Color-LinearSlogan-Bg: linear-gradient(315deg, rgba(3, 19, 33, 0.6), rgba(3, 19, 33, 0.6));
+
+
+    /*--- ContainerServices ---*/
+    --Height-ContainerServices: auto;
+    --Justify-ContainerServices: center;
+    --Padding-ContainerServices: 35px 0;
+
+
+    /* --- Magic Boxes --- */
+    --Width--MagicBox: 320px;
+    --Height--MagicBox: 400px;
+
+    --Width-MagicBoxes-Responsive : 60%;
+
+    --Padding--MagicBox: 0 20px;
+    --Margin--MagicBox: 30px 40px;
+
+    --Width-MagicBoxes-Before: 50%;
+    --Height-MagicBoxes-Before: 100%;
+
+    --Width-MagicBoxes-After: 50%;
+    --Height-MagicBoxes-After: 100%;
+
+    --Color--MagicBox1-Bg: linear-gradient(45deg, #D22730, #FFAD00);
+    --Color--MagicBox2-Bg: linear-gradient(45deg, #4D4DFF, #C724B1);
+    --Color--MagicBox3-Bg: linear-gradient(45deg, #DB3EB1, #2196f3);
+
+    --Width-MagicBoxesDoubleSqure-Before: 100%;
+    --Height-MagicBoxesDoubleSqure-Before: 100%;
+
+    --Width-MagicBoxesDoubleSqureHover-Before: 100px;
+    --Height-MagicBoxesDoubleSqureHover-Before: 100px;
+
+    --Width-MagicBoxesDoubleSqure-After: 100%;
+    --Height-MagicBoxesDoubleSqure-After: 100%;
+
+    --Width-MagicBoxesDoubleSqureHover-After: 100px;
+    --Height-MagicBoxesDoubleSqureHover-After: 100px;
+
+    --Left-MagicBoxHover-Content: -25px;
+    --Padding-MagicBoxesHover-Content: 60px 40px;
+
+
+
+    /* --- Magic Boxes Content --- */
+    --Width-MagicBoxes-Content: auto;
+    --Height-MagicBoxes-Content: auto;
+    --Padding-MagicBoxes-Content: 40px 40px;
+    --BorderRaduis-MagicBoxes-Content: 8px;
+    --BorderRaduis-MagicBoxesHover-Content: 8px;
+
+    --Backdrop-MagicBoxes-Content: blur(10px);
+
+    --BgColor-MagicBox1-Content : rgba(46, 46, 46, 0.1) ;
+    --BgColor-MagicBox2-Content :  rgba(46, 46, 46, 0.1) ;
+    --BgColor-MagicBox3-Content : rgba(46, 46, 46, 0.1) ;
+
+    --BgColor--MagicBoxesHover1-Content: rgba(255, 255, 255, 0.2) ;
+    --BgColor--MagicBoxesHover2-Content: rgba(255, 255, 255, 0.2);
+    --BgColor--MagicBoxesHover3-Content: rgba(255, 255, 255, 0.2);
+
+
+    --Color-MagicBox1-Title: #2196f3;
+    --Color-MagicBox2-Title: #FFAD00;
+    --Color-MagicBox3-Title: #FFAD00;
+
+    --Color-MagicBox1-Text: #ffad00;
+    --Color-MagicBox2-Text: #ffad00;
+    --Color-MagicBox3-Text: #ffad00;
+
+    --Color-MagicBox1hover-Text: #D22730;
+    --Color-MagicBox2hover-Text: #D22730;
+    --Color-MagicBox3hover-Text: #D22730;
+
+    --Color-MagicBoxBtn1-Bg: #031321;
+    --Color-MagicBoxBtn2-Bg: #031321;
+    --Color-MagicBoxBtn3-Bg: #031321;
+
+    --Color-MagicBoxBtn1-Text: #2196f3;
+    --Color-MagicBoxBtn2-Text: #2196f3;
+    --Color-MagicBoxBtn3-Text: #2196f3;
+
+
+
+
+
+
+    
+}
+/* ---------------- End Of Theme Packages ---------------- */

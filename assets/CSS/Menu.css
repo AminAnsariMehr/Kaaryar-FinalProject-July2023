@@ -1,0 +1,233 @@
+.MenuContainer {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu {
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+}
+
+
+.Menu__Links {
+    color: var(--Color-MenuLinks-Text);
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+    border-radius: 4px;
+    letter-spacing: 0.05rem;
+    transition: 0.2s;
+}
+
+/*------- Start Of  Snaky Effect Menu -------*/
+.Menu__Links:hover {
+    color: var(--Color-MenuLinksHover-Text);
+    background-color: var(--Color-MenuLinksHover-Bg);
+    box-shadow: 0 0 10px var(--Color-MenuLinksHover-Shadow),
+        0 0 40px var(--Color-MenuLinksHover-Shadow),
+        0 0 80px var(--Color-MenuLinksHover-Shadow);
+    transition-delay: var(--Transition-MenuLinksHover-Delay);
+}
+
+.Menu__BorderSnake {
+    display: block;
+    position: absolute;
+}
+
+.Menu__Links::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+    background: var(--Color-MenuLinksLinear-Top);
+}
+
+.Menu__Links::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: -100%;
+    bottom: 0;
+    background: var(--Color-MenuLinksLinear-Bottom);
+}
+
+.Menu__Links:hover::after {
+    left: 100%;
+    transition: 1s;
+}
+
+.Menu__Links:hover::before {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.Menu__BorderSnake--Right {
+    width: 2px;
+    height: 100%;
+    right: 0%;
+    top: -100%;
+    background: var(--Color-MenuLinksLinear-Right);
+}
+
+.Menu__BorderSnake--Left {
+    width: 2px;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+    background: var(--Color-MenuLinksLinear-Left);
+}
+
+.Menu__Links:hover .Menu__BorderSnake--Right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.Menu__Links:hover .Menu__BorderSnake--Left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.Menu__Links6--NoHoverColor {
+    background-color: var(--Color-MenuLinksStaticHover-Bg);
+    color: var(--Color-MenuLinksStaticHover-Text);
+    font-weight: 500;
+}
+
+.Menu__Links6--NoHoverColor::after {
+    content: ' ';
+    width: 0;
+    height: 0;
+}
+
+.Menu__Links6--NoHoverColor::before {
+    content: ' ';
+    width: 0;
+    height: 0;
+}
+
+.Menu__Links6--NoHoverColor:hover {
+    box-shadow: none;
+    color: var(--Color-MenuLinksStaticHover-Text);
+    background-color: var(--Color-MenuLinksStaticHover-Bg);
+}
+
+/*-------- End Of  Snaky Effect Menu -------*/
+
+
+
+/*--------- Start Of Search Section ---------*/
+.SearchSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    z-index: 10;
+}
+
+.SearchSection--HiddenSearchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 44.8px;
+    position: relative;
+}
+
+.SearchSection__searchInput {
+    display: none;
+}
+
+.SearchSection__LabelSearchIcon {
+    font-size: 1.6rem;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--Color-SearchIcon-Text);
+}
+
+.SearchSection__LabelSearchIcon:hover {
+    color: var(--Color-SearchIconHover-Text);
+
+}
+
+/*--- Start Search Box Container ---*/
+.SearchSection__SearchBoxContainer {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 76px;
+    top: -15px;
+    left: 65px;
+    transform: translate(-100%, 100%);
+    background-color: var(--Color-SearchBox-Bg);
+    box-shadow: 0 0 15px var(--Color-SearchBox-Shadow);
+    padding: 16px;
+    border-radius: var(--Radius-SearchBox-Border);
+}
+
+.SearchSection__SearchBoxContainer::after {
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 24px solid var(--Color-SearchBoxAfter-Bg);
+    top: 0;
+    left: 90%;
+    transform: translate(-35px, -50%);
+    background-color: none;
+}
+
+.SearchSection__SearchBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 267px;
+    height: 42px;
+}
+
+.SearchSection__SearchInput {
+    flex-grow: 1;
+    height: 100%;
+    color: var(--Color-SearchPlaceHoder-Text);
+    background-color: var(--Color-InputSearch-Bg);
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid var(--Color-InputSearch-Border);
+    outline: none;
+}
+
+.SearchSection__SearchIcon2 {
+    width: 40px;
+    height: 42px;
+    font-size: 24px;
+    color: var(--Color-SearchIcon2-Text);
+    background-color: var(--Color-SearchIcon2-Bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.SearchSection__searchInput:checked~.SearchSection__SearchBoxContainer {
+    display: flex;
+}
+/*--- End Search Box Container ---*/
+
+/*----------- End Of Search Section -----------*/

@@ -1,0 +1,546 @@
+.Header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SocialMedia-ColorPallet {
+    width: 100%;
+    height: 30px;
+    padding: 0px 88px;
+    font-family: 'Roboto';
+    background-color: var(--Color-SocialMedia-Bg);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*------------- Start Of Social Media -------------*/
+.SocialMedia {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.SocialMedia__PhoneNumber {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--Color-SocialMedia-Text);
+}
+
+.SocialMedia__List {
+    height: 100%;
+    display: flex;
+}
+
+.SocialMedia__Item--Border {
+    border-right: 1px solid var(--Color-SocialMedia-Border);
+    border-left: 1px solid var(--Color-SocialMedia-Border);
+}
+
+.SocialMedia__Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-size: 18px;
+}
+
+.bxl-twitter {
+    color: var(--Color-SocialMedia-Text);
+}
+
+.bxl-dribbble {
+    color: var(--Color-SocialMedia-Text);
+}
+
+.bxl-instagram {
+    color: var(--Color-SocialMedia-Text);
+}
+
+
+.SocialMedia__Links:hover {
+    transition: 0.5s;
+}
+
+.SocialMedia__Links--TwitterColorHover:hover {
+    background-color: #1D9BF0;
+}
+
+.SocialMedia__Links--dribbbleColorHover:hover {
+    background-color: #E94C88;
+}
+
+.SocialMedia__Links--InstagramColorHover:hover {
+    background-color: peru;
+}
+
+/*-------------- End Of Social Media -------------*/
+
+
+/*-------------- Start Of Navigation ------------*/
+
+.Navigation {
+    width: 100%;
+    height: 130px;
+    background-color: var(--Color-Body-Bg);
+    background: var(--Color-Navigation-Bg);
+    font-family: 'Roboto';
+
+    /* position: fixed; */
+    /* z-index: 10; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 88px;
+}
+
+.NavMenu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--------------------Start Of  Logo --------------------*/
+.Logo {
+    width: 392px;
+    height: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo__BuildWrapper {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: transparent;
+    border-radius: 20px;
+    background: var(--Color-LinearTextLogo-Bg);
+    animation: gradient 20s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.Logo__Image {
+    width: 75px;
+    height: 47px;
+    border-top-left-radius: var(--Radius-ImageLogo-Border);
+    border-bottom-left-radius: var(--Radius-ImageLogo-Border);
+}
+
+.Logo_Text {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 0 0;
+}
+
+.Logo__Title {
+    width: 100%;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: 2px;
+    -webkit-text-stroke: var(--Color-StrokeLogoBorder-Text);
+    color: var(--Color-StrokeLogoFill-Text);
+}
+
+.Logo__Description {
+    width: 100%;
+    color: var(--Color-DescLogo-Text);
+    font-size: 17px;
+    text-align: left;
+}
+
+/*-------------------- End Of  Logo --------------------*/
+
+
+/*---------------- Start Of BurgerMenu -----------------*/
+
+.BurgerMenu__Input--hidden {
+    display: none;
+}
+
+.BurgerMenu__Icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.BurgerMenu__Bar {
+    width: 31px;
+    height: 5px;
+    border-radius: 8px;
+    background-color: var(--Color-BurgerIcon-Bg);
+    transition: 0.5s;
+}
+
+.BurgerMenu__Input:checked~.BurgerMenu__Icon>.BurgerMenu__Bar--Top {
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+
+.BurgerMenu__Input:checked~.BurgerMenu__Icon>.BurgerMenu__Bar--Middle {
+    transform: translateX(20px);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.BurgerMenu__Input:checked~.BurgerMenu__Icon>.BurgerMenu__Bar--Bottom {
+    transform: rotate(-45deg);
+    transform-origin: left;
+}
+
+/*----------------- End Of BurgerMenu ------------------*/
+
+
+/*------------------- Start Of Slogan -------------------*/
+.Slogan {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 88px;
+    background: var(--Color-LinearSlogan-Bg),
+        url('./../Images/HeroSlogan.png') no-repeat center center /cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Slogan__text {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+}
+
+.Slogan__Title--size-small {
+    color: var(--Color-SloganTitle-Text);
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Slogan__Title--size-big {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5vw;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--Color-SloganTitle-Text);
+}
+
+/*----------------- End Of Slogan ------------------*/
+
+
+
+/*-------------- Start Of Magic Boxes --------------*/
+.ContainerServices {
+    width: 100%;
+    height: var(--Height-ContainerServices);
+    padding: var(--Padding-ContainerServices);
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: var(--Justify-ContainerServices);
+    align-items: center;
+}
+
+.MagicalBox {
+    width: var(--Width--MagicBox);
+    height: var(--Height--MagicBox);
+    padding: var(--Padding--MagicBox);
+    margin: var(--Margin--MagicBox);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.MagicalBox::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: var(--Width-MagicBoxes-Before);
+    height: var(--Height-MagicBoxes-Before);
+    background-color: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+.MagicalBox::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: var(--Width-MagicBoxes-After);
+    height: var(--Height-MagicBoxes-After);
+    background-color: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+}
+
+.MagicalBox:hover::before,
+.MagicalBox:hover::after {
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+
+.MagicalBox--BackgurongColor-1::before,
+.MagicalBox--BackgurongColor-1::after {
+    background: var(--Color--MagicBox1-Bg);
+}
+
+.MagicalBox--BackgurongColor-2::before,
+.MagicalBox--BackgurongColor-2::after {
+    background: var(--Color--MagicBox2-Bg);
+}
+
+.MagicalBox--BackgurongColor-3::before,
+.MagicalBox--BackgurongColor-3::after {
+    background: var(--Color--MagicBox3-Bg);
+}
+
+.MagicalBox__DoubleSqure {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.MagicalBox__DoubleSqure::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--Width-MagicBoxesDoubleSqure-Before);
+    height: var(--Height-MagicBoxesDoubleSqure-Before);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: DoubleSqure 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.MagicalBox:hover .MagicalBox__DoubleSqure::before {
+    top: -50px;
+    left: 50px;
+    width: var(--Width-MagicBoxesDoubleSqureHover-Before);
+    height: var(--Height-MagicBoxesDoubleSqureHover-Before);
+    opacity: 1;
+}
+
+.MagicalBox__DoubleSqure::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: var(--Width-MagicBoxesDoubleSqure-After);
+    height: var(--Height-MagicBoxesDoubleSqure-After);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: DoubleSqure 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation-delay: -1s;
+}
+
+.MagicalBox:hover .MagicalBox__DoubleSqure::after {
+    bottom: -50px;
+    right: 50px;
+    width: var(--Width-MagicBoxesDoubleSqureHover-After);
+    height: var(--Height-MagicBoxesDoubleSqureHover-After);
+    opacity: 1;
+}
+
+@keyframes DoubleSqure {
+
+    0%,
+    100% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.MagicalBox__Content {
+    color: var(--Color-MagicBox-Text);
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    left: 0;
+    padding: var(--Padding-MagicBoxes-Content);
+    background-color: var(--Color--MagicBoxes-Content);
+    border-radius: var(--BorderRaduis-MagicBoxes-Content);
+    backdrop-filter: var(--Backdrop-MagicBoxes-Content);
+    transition: 0.5s;
+}
+
+.MagicalBox:hover .MagicalBox__Content {
+    z-index: 1;
+    position: relative;
+    left: var(--Left-MagicBoxHover-Content);
+    padding: var(--Padding-MagicBoxesHover-Content);
+    border-radius: var(--BorderRaduis-MagicBoxesHover-Content);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+}
+
+.MagicalBox__Content--BgColor1 {
+    background-color: var(--BgColor-MagicBox1-Content);
+}
+
+.MagicalBox__Content--BgColor2 {
+    background-color: var(--BgColor-MagicBox2-Content);
+}
+
+.MagicalBox__Content--BgColor3 {
+    background-color: var(--BgColor-MagicBox3-Content);
+}
+
+.MagicalBox:hover .MagicalBox__Content--BgColor1 {
+    background-color: var(--BgColor--MagicBoxesHover1-Content);
+}
+
+.MagicalBox:hover .MagicalBox__Content--BgColor2 {
+    background-color: var(--BgColor--MagicBoxesHover2-Content);
+}
+
+.MagicalBox:hover .MagicalBox__Content--BgColor3 {
+    background-color: var(--BgColor--MagicBoxesHover3-Content);
+}
+
+.MagicalBox__Title {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.MagicalBox__Title--Color1 {
+    color: var(--Color-MagicBox1-Title);
+}
+
+.MagicalBox__Title--Color2 {
+    color: var(--Color-MagicBox2-Title);
+}
+
+.MagicalBox__Title--Color3 {
+    color: var(--Color-MagicBox3-Title);
+}
+
+.MagicalBox__Description {
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4rem;
+}
+
+.MagicalBox__Description--TextColor1 {
+    color: var(--Color-MagicBox1-Text);
+}
+
+.MagicalBox__Description--TextColor2 {
+    color: var(--Color-MagicBox2-Text);
+}
+
+.MagicalBox__Description--TextColor3 {
+    color: var(--Color-MagicBox3-Text);
+}
+
+.MagicalBox:hover .MagicalBox__Description--TextColor1 {
+    color: var(--Color-MagicBox1hover-Text);
+}
+
+.MagicalBox__Description--TextColor2 {
+    color: var(--Color-MagicBox2hover-Text);
+}
+
+.MagicalBox__Description--TextColor3 {
+    color: var(--Color-MagicBox3hover-Text);
+}
+
+.MagicalBox__Links {
+    min-width: 139px;
+    padding: 15px 30px 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    /* font-weight: 500; */
+    border-radius: 100px;
+    letter-spacing: 1px;
+    background-color: var(--Color-MagicBoxBtn-Bg);
+}
+
+.MagicalBox__Links--ColorBox1 {
+    color: var(--Color-MagicBoxBtn1-Text);
+    background-color: var(--Color-MagicBoxBtn1-Bg);
+}
+
+.MagicalBox__Links--ColorBox2 {
+    color: var(--Color-MagicBoxBtn2-Text);
+    background-color: var(--Color-MagicBoxBtn2-Bg);
+}
+
+.MagicalBox__Links--ColorBox3 {
+    color: var(--Color-MagicBoxBtn3-Text);
+    background-color: var(--Color-MagicBoxBtn3-Bg);
+}
+
+/*-------------- End Of Magic Boxes ---------------*/

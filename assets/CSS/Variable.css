@@ -1,0 +1,143 @@
+:root {
+
+    /* --- Pseudo Selection --- */
+    --Color-Selection-Text: #fff;
+    --Color-Selection-Bg: #084a79;
+
+
+    /* --- Social Media --- */
+    --Color-SocialMedia-Bg: #084a79;
+    --Color-SocialMedia-Text: #fff;
+    --Color-SocialMedia-Border: #073e63;
+
+
+    /* --- Theme Picker --- */
+    --Color-ThemePalettIcon-Text: #fff;
+    --Color-ThemePalettIconHover-Text: #fff;
+    --Color-ThemePalettIconHover-Bg: #084a79;
+    --Color-ThemeSchemePicker-Bg: #2c79b0;
+
+
+    /* --- Navigation Bar --- */
+    --Color-Navigation-Bg: #fff;
+
+    /* -------- Logo -------- */
+    --Color-StrokeLogoBorder-Text: #000 1px;
+    --Color-StrokeLogoFill-Text: #000;
+    --Radius-ImageLogo-Border: 0px;
+    --Color-DescLogo-Text: #c9c9c9;
+
+    /* ------- Menu ------- */
+    --Color-MenuLinks-Text: #c9c9c9;
+    --Color-MenuLinksHover-Text: #000;
+    --Color-MenuLinksHover-Bg: #fff;
+    --Color-MenuLinksHover-Border: #fff;
+    --Color-MenuLinksHover-Shadow: none;
+    --Transition-MenuLinksHover-Delay: 0s;
+    --Color-MenuLinksLinear-Top: linear-gradient(90deg, transparent, #fff);
+    --Color-MenuLinksLinear-Right: linear-gradient(180deg, transparent, #fff);
+    --Color-MenuLinksLinear-Bottom: linear-gradient(270deg, transparent, #fff);
+    --Color-MenuLinksLinear-Left: linear-gradient(360deg, transparent, #fff);
+    --Color-MenuLinksStaticHover-Text: #fff;
+    --Color-MenuLinksStaticHover-Bg: #084a79;
+    --Color-MenuResponsive-Bg: #fff;
+
+
+    /* --- SearchBox Section --- */
+    --Color-SearchIcon-Text: #c9c9c9;
+    --Color-SearchIconHover-Text: #000;
+    --Color-SearchBox-Bg: #fff;
+    --Radius-SearchBox-Border: 0px;
+    --Color-SearchBox-Shadow: rgb(169, 169, 169);
+    --Color-SearchBoxAfter-Bg: #fff;
+    --Color-SearchPlaceHoder-Text: #c9c9c9;
+    --Color-InputSearch-Border: #e1e1e1;
+    --Color-SearchIcon2-Text: #fff;
+    --Color-SearchIcon2-Bg: #084a79;
+
+    /* ----- Buerger Menu ----- */
+    --Color-BurgerIcon-Bg: #084a79;
+
+
+    /* ------------------ Start Of Slogan Complex ------------------ */
+    --Color-SloganTitle-Text: #fff;
+    --Color-LinearSlogan-Bg: linear-gradient(315deg, rgba(8, 74, 121, 0.6), rgba(8, 74, 121, 0.6));
+
+    /*--- ContainerServices ---*/
+    --Height-ContainerServices: 275px;
+    --Justify-ContainerServices: space-between;
+    --Padding-ContainerServices: 0;
+
+    /* --- Magic Boxes --- */
+    --Width--MagicBox: 33.33333%;
+    --Height--MagicBox: 100%;
+    --Padding--MagicBox: 0;
+    --Margin--MagicBox: 0;
+
+    --Width-MagicBoxes-Before: 0;
+    --Height-MagicBoxes-Before: 0;
+
+    --Width-MagicBoxes-After: 0;
+    --Height-MagicBoxes-After: 0;
+
+    --Color--MagicBox1-Bg: linear-gradient(45deg, #fff, #fff);
+    --Color--MagicBox2-Bg: linear-gradient(45deg, #094978, #105e96);
+    --Color--MagicBox3-Bg: linear-gradient(45deg, #072f4c, #0c4771);
+
+    --Width-MagicBoxesDoubleSqure-Before: 0;
+    --Height-MagicBoxesDoubleSqure-Before: 0;
+
+    --Width-MagicBoxesDoubleSqureHover-Before: 0;
+    --Height-MagicBoxesDoubleSqureHover-Before: 0;
+
+    --Width-MagicBoxesDoubleSqure-After: 0;
+    --Height-MagicBoxesDoubleSqure-After: 0;
+
+    --Width-MagicBoxesDoubleSqureHover-After: 0;
+    --Height-MagicBoxesDoubleSqureHover-After: 0;
+
+    --Left-MagicBoxHover-Content: 0;
+    --Padding-MagicBoxesHover-Content: 56px 40px;
+
+    /* --- Magic Boxes Content --- */
+    --Width-MagicBoxes-Content: 447px;
+    --Height-MagicBoxes-Content: 272.2px;
+    
+    --Width-MagicBoxes-Responsive: 100%;
+
+    --Padding-MagicBoxes-Content: 56px 40px;
+    --BorderRaduis-MagicBoxes-Content: 0;
+    --BorderRaduis-MagicBoxesHover-Content: 0;
+    --BgColor--MagicBoxesHover1-Content: #fff;
+    --BgColor--MagicBoxesHover2-Content: #1d5f8f;
+    --BgColor--MagicBoxesHover3-Content: #084a79;
+
+    --BgColor-MagicBox1-Content: #fff;
+    --BgColor-MagicBox2-Content: #1d5f8f;
+    --BgColor-MagicBox3-Content: #084a79;
+
+    --Color-MagicBox1-Title: #383838;
+    --Color-MagicBox2-Title: #fff;
+    --Color-MagicBox3-Title: #fff;
+
+    --Color-MagicBox1-Text: #383838;
+    --Color-MagicBox2-Text: #fff;
+    --Color-MagicBox3-Text: #fff;
+
+    --Color-MagicBox1hover-Text: #383838;
+    --Color-MagicBox2hover-Text: #fff;
+    --Color-MagicBox3hover-Text: #fff;
+
+    /*-- Magic Links Btn --*/
+    --Color-MagicBoxBtn1-Text: #fff;
+    --Color-MagicBoxBtn2-Text: #000;
+    --Color-MagicBoxBtn3-Text: #000;
+
+    --Color-MagicBoxBtn1-Bg: #084a79;
+    --Color-MagicBoxBtn2-Bg: #fff;
+    --Color-MagicBoxBtn3-Bg: #fff;
+    /* ------------------- End Of Slogan Complex ------------------ */
+
+
+
+}

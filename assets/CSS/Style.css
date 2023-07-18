@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('./Variable.css');
+@import url('ThemeColorSelector.css');
+@import url('./Menu.css');
+@import url('./Buttons.css');
+@import url('./MainClasses.css');
+@import url('./Header.css');
+@import url('./Footer.css');
+@import url('./Responsive.css');
+
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection
+{
+    color : var( --Color-Selection-Text); 
+    background-color : var(--Color-Selection-Bg) ;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.Container {
+    width: 100%;
+    background-color: cadetblue;
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main
+{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(151, 19, 222); */
+    background-color: #fff;
+}
+
+.Operate
+{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* padding:  100px; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Operate__Title
+{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.Operate__Desciption
+{
+    width: 90%;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    
+}
+
+.SeperatorIcon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx-diamond{
+    font-size: 24px;
+    color: #8a8a8a ; 
+}
+
+.SeperatorIcon__SpanIcon
+{
+    width: fit-content;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SeperatorIcon__SpanIcon::after
+{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(107% , -50%);
+    width: 100px;
+    height: 1px;
+    background-color: #8a8a8a;
+} 
+
+.SeperatorIcon__SpanIcon::before
+{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-107% , -50%);
+    width: 100px;
+    height: 1px;
+    background-color: #8a8a8a ;
+}  
+
