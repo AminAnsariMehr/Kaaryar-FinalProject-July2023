@@ -1,0 +1,244 @@
+@media (max-width:1235px) {
+
+    /************* Start Of Header *************/
+    .Container {
+        width: 100%;
+    }
+
+    .SocialMedia-ColorPallet {
+        justify-content: center;
+    }
+
+    .SocialMedia__List {
+        display: none;
+    }
+
+    .Navigation {
+        height: 82px;
+    }
+
+    .NavMenu {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .Logo {
+        width: fit-content;
+        margin-top: -4px;
+        padding-top: 10px;
+    }
+
+    .Logo__Image {
+        width: 56px;
+        height: 32px;
+    }
+
+    .Logo_Text {
+        margin-left: 3px;
+        margin-top: 3px;
+    }
+
+    .Logo__Title {
+        font-size: 25px;
+    }
+
+    .Logo__Description {
+        font-size: 13px;
+    }
+
+    .Menu {
+        display: none;
+    }
+
+    .Menu__Item {
+        width: 100%;
+    }
+
+    .Menu__Links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .BurgerMenu__Icon {
+        opacity: 1;
+    }
+
+    .Menu {
+        height: 100vh;
+        background-color: var(--Color-MenuResponsive-Bg);
+        opacity: 0.9;
+        padding: 100px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(100%, 0);
+        z-index: 5;
+        transition: 1s;
+    }
+
+    .BurgerMenu__Input--hidden:checked~.MenuContainer>.Menu {
+        transform: translate(0, 0);
+    }
+
+    .SearchSection {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transform: translate(0, 50%);
+    }
+
+    .Slogan {
+        padding: 0 40px;
+    }
+
+    .Slogan__Title--size-big {
+        font-size: 1.5em;
+    }
+
+    .ContainerServices {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .MagicalBox {
+        width: var(--Width-MagicBoxes-Responsive);
+    }
+
+    .Slogan__text--BigFontSize {
+        font-size: 8vw;
+    }
+
+    /************* End Of Header **************/
+
+
+    /************* Start Of Main **************/
+    .ServiceAndDetails {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .ServiceOverview,
+    .Details {
+        width: 100%;
+    }
+
+    .DoubleRowBoxes {
+        flex-direction: column;
+    }
+
+    .DoubleRowBoxes__BlueBox {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .DoubleRowBoxes__WhiteBox {
+        width: 100%;
+    }
+
+    .SeperatorIcon__SpanIcon::after,
+    .SeperatorIcon__SpanIcon::before {
+        width: 50px;
+    }
+
+    /************** End Of Main **************/
+
+    .SlideContent {
+        width: 100%;
+        min-height: 300px;
+        padding: 50px;
+    }
+
+    .SlideContent--CenterCenter {
+        width: 100%;
+        height: 100%;
+    }
+
+    .SlideContent__firstP {
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .SlideContent__SecondP {
+        font-size: 13px;
+    }
+
+    .OperateSection__Title {
+        font-size: 34px;
+    }
+
+    .OperateSection__Desciption {
+        color: #b0b0b0;
+    }
+
+    .ContactList {
+        flex-wrap: wrap;
+    }
+
+    .FooterLinks {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width:400px) {
+
+    .Logo {
+        width: fit-content;
+        padding-top: 10px;
+        margin-top: -3px;
+        margin-left: 8px;
+    }
+
+    .Logo__Image {
+        width: 48px;
+        height: 28px;
+    }
+
+    .Logo_Text {
+        margin-left: 3px;
+    }
+
+    .Logo__Title {
+        font-size: 18px;
+        margin-top: -6px;
+    }
+
+    .Logo__Description {
+        font-size: 10px;
+    }
+
+    .SearchSection {
+        transform: translate(18px, 50%);
+    }
+
+    .SearchSection__LabelSearchIcon {
+        font-size: 1.2rem;
+        margin-top: -4px;
+    }
+
+    .BurgerMenu__Icon {
+        gap: 5px;
+    }
+
+    .BurgerMenu__Bar {
+        width: 25px;
+        height: 4px;
+    }
+
+}
+

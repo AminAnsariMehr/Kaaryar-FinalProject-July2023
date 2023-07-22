@@ -29,6 +29,7 @@
     transition: 0.2s;
 }
 
+
 /*------- Start Of  Snaky Effect Menu -------*/
 .Menu__Links:hover {
     color: var(--Color-MenuLinksHover-Text);

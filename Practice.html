@@ -19,11 +19,794 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="assets/CSS/Practice.css">
+    <link rel="stylesheet" href="./assets/CSS/Practice/Practice.css">
+    <link rel="stylesheet" href="./assets/CSS/Practice/Responsive_Practice.css">
 </head>
-<body>
-        <div class="Container">
 
-        </div>
+<body>
+
+    <div class="Container">
+        <!------------------------------------ Start Header ------------------------------------->
+        <header class="Header">
+            <div class="SocialMedia-ColorPallet">
+                <!--------------------- Start Of Theme -------------------->
+                <section class="ThemePackages">
+                    <input type="checkbox" id="ThemePalette" class="ThemePackages__Input">
+                    <label for="ThemePalette" class=" ThemePackages__Label">
+                        <i class='bx bx-palette ThemePackages__PalletIcon '></i>
+                    </label>
+
+                    <form action="" class="ThemeSchemePicker">
+                        <fieldset class="ThemeSchemePicker__Fieldset--hidden">
+                            <legend class="ThemeSchemePicker__Legend--Visually-hidden ">Theme Scheme Picker</legend>
+
+                            <!--------- Light Mode --------->
+                            <label class="ThemeSchemePicker__Label--Visually-hidden" for="Light">Light Mode</label>
+                            <input class="ThemeSchemePicker__Input ThemeSchemePicker__Input--Light-Color" type="radio"
+                                name="theme" id="Light" checked>
+
+                            <!---------  Neon Mode  --------->
+                            <label class="ThemeSchemePicker__Label--Visually-hidden" for="NeonLight">Neon
+                                Light</label>
+                            <input class="ThemeSchemePicker__Input ThemeSchemePicker__Input--NeonLight-Color"
+                                type="radio" name="theme" id="NeonLight">
+                        </fieldset>
+                    </form>
+                </section>
+                <!--------------------- End Of Theme --------------------->
+
+
+                <!------------------- Start Social Media ------------------->
+                <section class="SocialMedia ">
+                    <p class="SocialMedia__PhoneNumber">Call us now: (555) 45 786 332</p>
+                    <ul class="SocialMedia__List">
+                        <li class="SocialMedia__Item">
+                            <a href="#" class="SocialMedia__Links  SocialMedia__Links--TwitterColorHover ">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li class=" SocialMedia__Item SocialMedia__Item--Border">
+                            <a href="#" class="SocialMedia__Links  SocialMedia__Links--dribbbleColorHover ">
+                                <i class='bx bxl-dribbble'></i>
+                            </a>
+                        </li>
+                        <li class="SocialMedia__Item">
+                            <a href="#" class="SocialMedia__Links  SocialMedia__Links--InstagramColorHover ">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!------------------ End Of Social Media ------------------>
+            </div>
+
+            <section class="Navigation">
+                <nav class="NavMenu">
+                    <!------------------- Start Of Logo --------------------->
+                    <div class="Logo">
+                        <div class="Logo__BuildWrapper">
+                            <img class="Logo__Image" src="assets/Images/LogoEdited.png" alt="EnfoldLogo">
+                            <div class="Logo_Text">
+                                <p class="Logo__Title">ENFOLD <span class="Logo__Title--Color-Blue">LAWYER</span>
+                                </p>
+                                <p class="Logo__Description">legal consulting for absolutly everyone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------------------End Of Logo ---------------------->
+
+                    <!--------- Start Of BurgerMenu ----------->
+                    <input type="checkbox" id="BurgerMenu" class=" BurgerMenu__Input BurgerMenu__Input--hidden">
+                    <label for="BurgerMenu" class="BurgerMenu__Icon">
+                        <div class="BurgerMenu__Bar BurgerMenu__Bar--Top"></div>
+                        <div class="BurgerMenu__Bar BurgerMenu__Bar--Middle"></div>
+                        <div class="BurgerMenu__Bar BurgerMenu__Bar--Bottom"></div>
+                    </label>
+                    <!--------- End Of BurgerMenu ------------>
+
+                    <!------------------- Start Of Menu -------------------->
+                    <div class="MenuContainer">
+                        <ul class="Menu">
+                            <li class="Menu__Item ">
+                                <a href="./index.html" class="Menu__Links">
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Right"></span>
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Left"></span>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="Menu__Item ">
+                                <a href="#" class="Menu__Links">
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Right"></span>
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Left"></span>
+                                    Practice
+                                </a>
+                            </li>
+                            <li class="Menu__Item ">
+                                <a href="#" class="Menu__Links">
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Right"></span>
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Left"></span>
+                                    About
+                                </a>
+                            </li>
+                            <li class="Menu__Item ">
+                                <a href="#" class="Menu__Links">
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Right"></span>
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Left"></span>
+                                    News
+                                </a>
+                            </li>
+                            <li class="Menu__Item ">
+                                <a href="#" class="Menu__Links">
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Right"></span>
+                                    <span class=" Menu__BorderSnake Menu__BorderSnake--Left"></span>
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="Menu__Item Menu__Item--HoverColor6">
+                                <a href="#" class="Menu__Links Menu__Links6--NoHoverColor">
+                                    Get in touch
+                                </a>
+                            </li>
+                        </ul>
+                        <!--------------------End Of Menu ---------------------->
+
+
+                        <!----------------- Start Of Search Section --------------->
+                        <section class="SearchSection  SearchSection--HiddenSearchBox ">
+                            <input type="checkbox" id="SearchIcon" class="SearchSection__searchInput">
+                            <label for="SearchIcon" class="SearchSection__LabelSearchIcon">
+                                <i class='bx bx-search-alt-2'></i>
+                            </label>
+                            <!------ Start Of SearchBoxContainer ------->
+                            <div class="SearchSection__SearchBoxContainer">
+                                <div class="SearchSection__SearchBox">
+                                    <input type="search" placeholder="Search" class="SearchSection__SearchInput">
+                                    <i class='bx bx-search-alt-2 SearchSection__SearchIcon2 '></i>
+                                </div>
+                            </div>
+                            <!------ End Of SearchBoxContainer -------->
+                        </section>
+                        <!--------------- End Of Search Section --------------->
+                    </div>
+                </nav>
+            </section>
+
+            <!--------------------- Start Of Slogan ------------------------>
+            <div class="Slogan">
+                <p class="Slogan__text--BigFontSize">Practice Areas </p>
+            </div>
+            <!---------------------- End Of Slogan ------------------------->
+        </header>
+        <!------------------------------------ End Of Header ----------------------------------->
+
+
+
+
+        <!------------------------------------- StartOf Main ------------------------------------>
+        <main class="main">
+            <div class="InnerContainer2">
+                <!---------------- Start Of Service And Details --------------->
+                <div class="ServiceAndDetails">
+                    <div class="ServiceOverview">
+                        <h3 class="ServiceAndDetails__Title">Overview of our services…</h3>
+                        <p class="ServiceAndDetails__Description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis <strong
+                                class="ServiceAndDetails__Strong">parturient montes</strong> , nascetur ridiculus mus.
+                        </p>
+                        <p class="ServiceAndDetails__Description">
+                            Donec quam felis, ultricies nec, pellentesque. Nulla <a href="#"
+                                class="ServiceAndDetails__link">consequat massa</a> quis enim.
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <h3 class="ServiceAndDetails__Title">And in detail…</h3>
+                        <p class="ServiceAndDetails__Description">
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                            ut, imperdiet a, venenatis vitae, justo.
+                        </p>
+                        <p class="ServiceAndDetails__Description">
+                            Nullam dictum felis eu pede mollis pretium. Integer <strong
+                                class="ServiceAndDetails__Strong">tincidunt</strong>. Cras dapibus. Vivamus elementum
+                            semper nisi. Aenean vulputate eleifend tellus.
+                        </p>
+                    </div>
+                </div>
+                <!---------------- End Of Service And Details ---------------->
+
+
+                <!------------ Start Of  Seperator Icon ------------>
+                <section class="SeperatorIcon">
+                    <span class="SeperatorIcon__SpanIcon">
+                        <i class='bx bx-diamond'></i>
+                    </span>
+                </section>
+                <!------------- End Of  Seperator Icon ------------>
+
+
+
+
+                <!-------------- Start Of First DoubleRowBoxes --------------->
+
+                <div class="DoubleRowBoxes">
+
+                    <!------------------- Start Of BlueBox ------------------->
+                    <div class="DoubleRowBoxes__BlueBox">
+                        <i class="bx bx-arch  IconBlueIcon"></i>
+                        <h2 class="BlueBox__Title">Real Property Litigation</h2>
+                        <p class="BlueBox__Description">
+                            Donec quam felis, ultricies nec eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+                        <a href="#" class="BlueBox__Link">Get in touch</a>
+                    </div>
+                    <!------------------- End Of BlueBox -------------------->
+
+
+                    <!------------------ Start Of WhiteBox ------------------>
+                    <div class="DoubleRowBoxes__WhiteBox">
+                        <h2 class="WhiteBox__Title">In detail…</h2>
+                        <p class="WhiteBox__Description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient <strong
+                                class="WhiteBox__StrongWord">montes</strong>, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+
+                        <blockquote class="WhiteBox__blockquote">
+                            <p class="WhiteBox__Description WhiteBox__Descriptionblockquote ">
+                                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                                <strong class="WhiteBox__StrongWord">pretium</strong>.
+                            </p>
+                        </blockquote>
+
+                        <!------------ Start Of  Seperator Icon ------------>
+                        <section class="SeperatorIcon">
+                            <span class="SeperatorIcon__SpanIcon">
+                                <i class='bx bx-diamond'></i>
+                            </span>
+                        </section>
+                        <!------------- End Of  Seperator Icon ------------>
+
+                        <p class="WhiteBox__Description">
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                            ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                            dapibus in, viverra quis, feugiat a, tellus.
+                        </p>
+
+                        <ul class="WhiteBox__list">
+                            <li class="WhiteBox__Item">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Aenean commodo ligula eget dolor. Aenean massa.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Cum sociis <strong class="WhiteBox__StrongWord">natoque penatibus</strong> et magnis dis
+                                parturient montes.
+                            </li>
+                        </ul>
+                        <p class="WhiteBox__Description">
+                            Nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.
+                        </p>
+                    </div>
+                    <!------------------ End Of WhiteBox ------------------->
+                </div>
+                <!---------------- End Of First DoubleRowBoxes ----------------->
+
+
+
+                <!--------------- Start Of Second DoubleRowBoxes --------------->
+
+                <div class="DoubleRowBoxes">
+
+                    <!------------------ Start Of WhiteBox ------------------>
+                    <div class="DoubleRowBoxes__WhiteBox">
+                        <h2 class="WhiteBox__Title">In detail…</h2>
+                        <p class="WhiteBox__Description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient <strong
+                                class="WhiteBox__StrongWord">montes</strong>, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+
+                        <blockquote class="WhiteBox__blockquote">
+                            <p class="WhiteBox__Description WhiteBox__Descriptionblockquote ">
+                                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                                <strong class="WhiteBox__StrongWord">pretium</strong>.
+                            </p>
+                        </blockquote>
+
+                        <!------------ Start Of  Seperator Icon ------------>
+                        <section class="SeperatorIcon">
+                            <span class="SeperatorIcon__SpanIcon">
+                                <i class='bx bx-diamond'></i>
+                            </span>
+                        </section>
+                        <!------------- End Of  Seperator Icon ------------>
+
+                        <p class="WhiteBox__Description">
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                            ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                            dapibus in, viverra quis, feugiat a, tellus.
+                        </p>
+
+                        <ul class="WhiteBox__list">
+                            <li class="WhiteBox__Item">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Aenean commodo ligula eget dolor. Aenean massa.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Cum sociis <strong class="WhiteBox__StrongWord">natoque penatibus</strong> et magnis dis
+                                parturient montes.
+                            </li>
+                        </ul>
+                        <p class="WhiteBox__Description">
+                            Nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.
+                        </p>
+                    </div>
+                    <!------------------ End Of WhiteBox ------------------->
+
+
+                    <!------------------- Start Of BlueBox ------------------->
+                    <div class="DoubleRowBoxes__BlueBox">
+                        <i class="bx bxs-file-doc  IconBlueIcon"></i>
+                        <h2 class="BlueBox__Title">Real Property Litigation</h2>
+                        <p class="BlueBox__Description">
+                            Donec quam felis, ultricies nec eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+                        <a href="#" class="BlueBox__Link">Get in touch</a>
+                    </div>
+                    <!------------------- End Of BlueBox -------------------->
+                </div>
+                <!------------- End Of Second DoubleRowBoxes ------------->
+
+
+
+
+                <!------------- Start Of Third DoubleRowBoxes ------------>
+                <div class="DoubleRowBoxes">
+
+                    <!------------------- Start Of BlueBox ------------------->
+                    <div class="DoubleRowBoxes__BlueBox">
+                        <i class="bx bxs-planet  IconBlueIcon"></i>
+                        <h2 class="BlueBox__Title">Real Property Litigation</h2>
+                        <p class="BlueBox__Description">
+                            Donec quam felis, ultricies nec eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+                        <a href="#" class="BlueBox__Link">Get in touch</a>
+                    </div>
+                    <!------------------- End Of BlueBox -------------------->
+
+
+                    <!------------------ Start Of WhiteBox ------------------>
+                    <div class="DoubleRowBoxes__WhiteBox">
+                        <h2 class="WhiteBox__Title">In detail…</h2>
+                        <p class="WhiteBox__Description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient <strong
+                                class="WhiteBox__StrongWord">montes</strong>, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+
+                        <blockquote class="WhiteBox__blockquote">
+                            <p class="WhiteBox__Description WhiteBox__Descriptionblockquote ">
+                                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                                <strong class="WhiteBox__StrongWord">pretium</strong>.
+                            </p>
+                        </blockquote>
+
+                        <!------------ Start Of  Seperator Icon ------------>
+                        <section class="SeperatorIcon">
+                            <span class="SeperatorIcon__SpanIcon">
+                                <i class='bx bx-diamond'></i>
+                            </span>
+                        </section>
+                        <!------------- End Of  Seperator Icon ------------>
+
+                        <p class="WhiteBox__Description">
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                            ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                            dapibus in, viverra quis, feugiat a, tellus.
+                        </p>
+
+                        <ul class="WhiteBox__list">
+                            <li class="WhiteBox__Item">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Aenean commodo ligula eget dolor. Aenean massa.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Cum sociis <strong class="WhiteBox__StrongWord">natoque penatibus</strong> et magnis dis
+                                parturient montes.
+                            </li>
+                        </ul>
+                        <p class="WhiteBox__Description">
+                            Nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.
+                        </p>
+                    </div>
+                    <!------------------ End Of WhiteBox ------------------->
+                </div>
+                <!-------------- End Of Third DoubleRowBoxes ------------->
+            </div>
+
+
+
+
+            <!-------------------------------- Start Of SlideContent ------------------------------->
+            <section class="SlideContent">
+                <div class="SlideContent--CenterCenter">
+                    <div class="Paragraphcontent">
+                        <p class="SlideContent__firstP">
+                            We are the best reviewed Criminal Defence Law Firm in the US.
+                        </p>
+                        <p class="SlideContent__SecondP">
+                            If you want to be represented by the best law firm for your case then do not hesitate
+                            and write us a mail!
+                        </p>
+                    </div>
+                    <a href="#" class="SlideContent__Link">Get in touch</a>
+                </div>
+            </section>
+            <!--------------------------------- End Of SlideContent -------------------------------->
+
+
+
+            <div class="InnerContainer2">
+
+                <!------------ Start Of Fourth DoubleRowBoxes ------------->
+
+                <div class="DoubleRowBoxes">
+
+                    <!------------------- Start Of BlueBox ------------------->
+                    <div class="DoubleRowBoxes__BlueBox">
+                        <i class="bx bxs-envelope  IconBlueIcon"></i>
+                        <h2 class="BlueBox__Title">Real Property Litigation</h2>
+                        <p class="BlueBox__Description">
+                            Donec quam felis, ultricies nec eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+                        <a href="#" class="BlueBox__Link">Get in touch</a>
+                    </div>
+                    <!------------------- End Of BlueBox -------------------->
+
+
+                    <!------------------ Start Of WhiteBox ------------------>
+                    <div class="DoubleRowBoxes__WhiteBox">
+                        <h2 class="WhiteBox__Title">In detail…</h2>
+                        <p class="WhiteBox__Description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient <strong
+                                class="WhiteBox__StrongWord">montes</strong>, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+
+                        <blockquote class="WhiteBox__blockquote">
+                            <p class="WhiteBox__Description WhiteBox__Descriptionblockquote ">
+                                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                                <strong class="WhiteBox__StrongWord">pretium</strong>.
+                            </p>
+                        </blockquote>
+
+                        <!------------ Start Of  Seperator Icon ------------>
+                        <section class="SeperatorIcon">
+                            <span class="SeperatorIcon__SpanIcon">
+                                <i class='bx bx-diamond'></i>
+                            </span>
+                        </section>
+                        <!------------- End Of  Seperator Icon ------------>
+
+                        <p class="WhiteBox__Description">
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                            ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                            dapibus in, viverra quis, feugiat a, tellus.
+                        </p>
+
+                        <ul class="WhiteBox__list">
+                            <li class="WhiteBox__Item">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Aenean commodo ligula eget dolor. Aenean massa.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Cum sociis <strong class="WhiteBox__StrongWord">natoque penatibus</strong> et magnis dis
+                                parturient montes.
+                            </li>
+                        </ul>
+                        <p class="WhiteBox__Description">
+                            Nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.
+                        </p>
+                    </div>
+                    <!------------------ End Of WhiteBox ------------------->
+                </div>
+                <!------------ End Of Fourth DoubleRowBoxes -------------->
+
+
+
+                <!-------------- Start Of Fifth DoubleRowBoxes ------------->
+
+                <div class="DoubleRowBoxes">
+
+                    <!------------------ Start Of WhiteBox ------------------>
+                    <div class="DoubleRowBoxes__WhiteBox">
+                        <h2 class="WhiteBox__Title">In detail…</h2>
+                        <p class="WhiteBox__Description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient <strong
+                                class="WhiteBox__StrongWord">montes</strong>, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+
+                        <blockquote class="WhiteBox__blockquote">
+                            <p class="WhiteBox__Description WhiteBox__Descriptionblockquote ">
+                                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                                <strong class="WhiteBox__StrongWord">pretium</strong>.
+                            </p>
+                        </blockquote>
+
+                        <!------------ Start Of  Seperator Icon ------------>
+                        <section class="SeperatorIcon">
+                            <span class="SeperatorIcon__SpanIcon">
+                                <i class='bx bx-diamond'></i>
+                            </span>
+                        </section>
+                        <!------------- End Of  Seperator Icon ------------>
+
+                        <p class="WhiteBox__Description">
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                            ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                            dapibus in, viverra quis, feugiat a, tellus.
+                        </p>
+
+                        <ul class="WhiteBox__list">
+                            <li class="WhiteBox__Item">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Aenean commodo ligula eget dolor. Aenean massa.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Cum sociis <strong class="WhiteBox__StrongWord">natoque penatibus</strong> et magnis dis
+                                parturient montes.
+                            </li>
+                        </ul>
+                        <p class="WhiteBox__Description">
+                            Nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.
+                        </p>
+                    </div>
+                    <!------------------ End Of WhiteBox ------------------->
+
+
+                    <!------------------- Start Of BlueBox ------------------->
+                    <div class="DoubleRowBoxes__BlueBox">
+                        <i class="bx bxs-car IconBlueIcon"></i>
+                        <h2 class="BlueBox__Title">Real Property Litigation</h2>
+                        <p class="BlueBox__Description">
+                            Donec quam felis, ultricies nec eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+                        <a href="#" class="BlueBox__Link">Get in touch</a>
+                    </div>
+                    <!------------------- End Of BlueBox -------------------->
+                </div>
+                <!-------------- End Of Fifth DoubleRowBoxes -------------->
+
+
+
+
+                <!------------- Start Of Sixth DoubleRowBoxes -------------->
+                <div class="DoubleRowBoxes">
+
+                    <!------------------- Start Of BlueBox ------------------->
+                    <div class="DoubleRowBoxes__BlueBox">
+                        <i class="bx bxs-graduation  IconBlueIcon"></i>
+                        <h2 class="BlueBox__Title">Real Property Litigation</h2>
+                        <p class="BlueBox__Description">
+                            Donec quam felis, ultricies nec eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+                        <a href="#" class="BlueBox__Link">Get in touch</a>
+                    </div>
+                    <!------------------- End Of BlueBox -------------------->
+
+
+                    <!------------------ Start Of WhiteBox ------------------>
+                    <div class="DoubleRowBoxes__WhiteBox">
+                        <h2 class="WhiteBox__Title">In detail…</h2>
+                        <p class="WhiteBox__Description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient <strong
+                                class="WhiteBox__StrongWord">montes</strong>, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+
+                        <blockquote class="WhiteBox__blockquote">
+                            <p class="WhiteBox__Description WhiteBox__Descriptionblockquote ">
+                                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                                <strong class="WhiteBox__StrongWord">pretium</strong>.
+                            </p>
+                        </blockquote>
+
+                        <!------------ Start Of  Seperator Icon ------------>
+                        <section class="SeperatorIcon">
+                            <span class="SeperatorIcon__SpanIcon">
+                                <i class='bx bx-diamond'></i>
+                            </span>
+                        </section>
+                        <!------------- End Of  Seperator Icon ------------>
+
+                        <p class="WhiteBox__Description">
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                            ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                            dapibus in, viverra quis, feugiat a, tellus.
+                        </p>
+
+                        <ul class="WhiteBox__list">
+                            <li class="WhiteBox__Item">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Aenean commodo ligula eget dolor. Aenean massa.
+                            </li>
+                            <li class="WhiteBox__Item">
+                                Cum sociis <strong class="WhiteBox__StrongWord">natoque penatibus</strong> et magnis dis
+                                parturient montes.
+                            </li>
+                        </ul>
+                        <p class="WhiteBox__Description">
+                            Nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.
+                        </p>
+                    </div>
+                    <!------------------ End Of WhiteBox ------------------->
+                </div>
+                <!-------------- End Of Sixth DoubleRowBoxes -------------->
+            </div>
+
+            <!------------------------------------ End Of Main ------------------------------------>
+
+
+            <!----------------------------------- Start Of Footer ----------------------------------->
+            <footer class="Footer">
+                <div class="InnerContainer">
+                    <section class="OperateSection">
+                        <h2 class="OperateSection__Title">
+                            Any more questions? Feel free to write us a mail!
+                        </h2>
+                        <p class="OperateSection__Desciption">
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p>
+                    </section>
+
+                    <section class="SeperatorIcon">
+                        <span class="SeperatorIcon__SpanIcon">
+                            <i class='bx bx-diamond'></i>
+                        </span>
+                    </section>
+
+                    <section class="ContactSection">
+
+                        <div class="ContactList">
+                            <a href="#" class="ContactList__Links">
+                                <i class='bx bxl-twitter ContactList__Icon '></i>
+                                <span class="ContactList__LinksTitle--Hover">Follow me on the Twitter</span>
+                            </a>
+                            <a href="#" class="ContactList__Links">
+                                <i class='bx bxl-facebook ContactList__Icon '></i>
+                                <span class="ContactList__LinksTitle--Hover">Follow me on the Facebook</span>
+                            </a>
+                            <a href="#" class="ContactList__Links">
+                                <i class='bx bxl-dribbble ContactList__Icon '></i>
+                                <span class="ContactList__LinksTitle--Hover">Follow me on the Dribbble</span>
+                            </a>
+                            <a href="#" class="ContactList__Links">
+                                <i class='bx bxl-instagram-alt ContactList__Icon '></i>
+                                <span class="ContactList__LinksTitle--Hover">Follow me on the Instagram</span>
+                            </a>
+                            <a href="#" class="ContactList__Links">
+                                <i class='bx bxl-linkedin ContactList__Icon '></i>
+                                <span class="ContactList__LinksTitle--Hover">Follow me on the Linkedin</span>
+                            </a>
+                            <a href="#" class="ContactList__Links">
+                                <i class='bx bx-envelope ContactList__Icon '></i>
+                                <span class="ContactList__LinksTitle--Hover">Get in Touch</span>
+                            </a>
+                        </div>
+
+                        <div class="Contact__Desciption">
+                            <p class="Contact__DescParagraph">
+                                <strong class="Contact__Strong">IMPRINT</strong>
+                            </p>
+
+                            <p class="Contact__DescParagraph">
+                                Enfold Law Agency | Attorneys of Law | 3231 South King Boulevard Suite 315 <br>
+                                Phone: +555 240 92 20 | Fax: +555 240 51 94 | Email: office@enfold-law-office.com <br>
+                                VAT-Nummer: 56473643 | ASDF-Code: R234567
+                            </p>
+
+                            <p class="Contact__DescParagraph">
+                                Located in California, the law firm of Enfold Law L.L.P. represents clients throughout
+                                California, including, but not limited to the cities of Los Angeles, Santa Ana, Yorba
+                                Linda,
+                                San Juan Capistrano, Mission Viejo, Newport Beach, Huntington Beach, Tustin, Irvine,
+                                Costa
+                                Mesa, Fullerton, Brea, Corona, Chino, Temecula, Lake Elsinore and Orange County, Los
+                                Angeles
+                                County, Riverside County, San Bernardino County and San Diego County.
+                            </p>
+
+                            <p class="Contact__DescParagraph">
+                                <strong class="Contact__Strong">DISCLAIMER</strong>
+                            </p>
+
+                            <p class="Contact__DescParagraph">
+                                The information contained in this website is for general information purposes only. The
+                                information is provided by [business name] and while we endeavour to keep the
+                                information up
+                                to date and correct, we make no representations or warranties of any kind, express or
+                                implied, about the completeness, accuracy, reliability, suitability or availability with
+                                respect to the website or the information, products, services, or related graphics
+                                contained
+                                on the website for any purpose. Any reliance you place on such information is therefore
+                                strictly at your own risk.
+                            </p>
+
+                        </div>
+
+                        <section class="SeperatorIcon">
+                            <span class="SeperatorIcon__SpanIcon">
+                                <i class='bx bx-diamond'></i>
+                            </span>
+                        </section>
+
+                        <div class="FooterLinks">
+                            <div class="FooterLinks__LinksUpward">
+                                <a href="#" class="FooterLinks__Links">About</a>
+                                <span class="FooterLinks__SpanSeprator">|</span>
+                                <a href="#" class="FooterLinks__Links">Imprint</a>
+                                <span class="FooterLinks__SpanSeprator">|</span>
+                                <a href="#" class="FooterLinks__Links">Contact</a>
+                                <span class="FooterLinks__SpanSeprator">|</span>
+                                <a href="#" class="FooterLinks__Links">Terms</a>
+                                <span class="FooterLinks__SpanSeprator">|</span>
+                            </div>
+
+                            <div class="FooterLinks_CopyRight">
+                                <a href="#" class="FooterLinks_CopyRightLinks">
+                                    © 2023 Enfold by AminOoOo
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </footer>
+            <!------------------------------------ EndOf Footer ------------------------------------>
+    </div>
+    </main>
 </body>
+
 </html>

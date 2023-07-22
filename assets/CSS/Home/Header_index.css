@@ -8,7 +8,7 @@
 .SocialMedia-ColorPallet {
     width: 100%;
     height: 30px;
-    padding: 0px 88px;
+    padding: 0px 5.7291% ;
     font-family: 'Roboto';
     background-color: var(--Color-SocialMedia-Bg);
     position: relative;
@@ -79,12 +79,10 @@
 .SocialMedia__Links--InstagramColorHover:hover {
     background-color: peru;
 }
-
 /*-------------- End Of Social Media -------------*/
 
 
 /*-------------- Start Of Navigation ------------*/
-
 .Navigation {
     width: 100%;
     height: 130px;
@@ -97,7 +95,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 88px;
+    /* padding-left: 88px; */
+    
 }
 
 .NavMenu {
@@ -117,6 +116,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 5.7291% ;
 }
 
 .Logo__BuildWrapper {
@@ -236,9 +236,9 @@
 .Slogan {
     width: 100%;
     min-height: 100vh;
-    padding: 0px 88px;
+    /* padding: 0px 88px; */
     background: var(--Color-LinearSlogan-Bg),
-        url('./../Images/HeroSlogan.png') no-repeat center center /cover;
+        url('./../../Images/HeroSlogan.png') no-repeat center center /cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -521,8 +521,7 @@
     min-width: 139px;
     padding: 15px 30px 13px;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    /* font-weight: 500; */
+    font-size: 13px;
     border-radius: 100px;
     letter-spacing: 1px;
     background-color: var(--Color-MagicBoxBtn-Bg);
