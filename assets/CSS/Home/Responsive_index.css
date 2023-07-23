@@ -23,9 +23,8 @@
 
     .ThemePackages {
         position: absolute;
-        top: 50%;
+        top: 0;
         left: 0;
-        transform: translate(0, -50%);
     }
 
     .Navigation {

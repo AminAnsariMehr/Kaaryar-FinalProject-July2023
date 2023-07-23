@@ -53,19 +53,20 @@ a {
     flex-direction: column;
 }
 
-.InnerContainer{
+.InnerContainer--WithoutPaddingTop {
     width: 95%;
     padding: 0 50px;
     display: flex;
     flex-direction: column;
 }
 
-.InnerContainer2 {
+.InnerContainer--WithPaddingTop {
     width: 95%;
     padding: 130px 50px;
     display: flex;
     flex-direction: column;
 }
+
 
 /********** Start Of Service And Details **********/
 .ServiceAndDetails
