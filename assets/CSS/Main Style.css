@@ -6,6 +6,7 @@
 @import url('./Common/ThemeColorSelector.css');
 @import url('./Common/Menu.css');
 @import url('./Home/Header_index.css');
+@import url('./Common/Buttons.css');
 @import url('./Common/Footer.css');
 @import url('./Responsive.css');
 
@@ -55,9 +56,20 @@ a {
     padding: 130px 50px;
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
 }
 
+.InnerContainer--WithPaddingTopPart1 {
+    background: blue;
+    padding: 50px 50px;
+}
+
+.InnerContainer--WithPaddingTopPart2 {
+    background: purple;
+}
+
+.InnerContainer--WithPaddingTopPart3 {
+    background: aqua;
+}
 
 
 .main {
@@ -145,105 +157,261 @@ a {
 
 
 
-/*******  Start Of 3pleBoxes Glassmorphism  *******/
-.TripleBoxes
-{
+/***********  Start Of 3ple Cards  ***********/
+.TripleBoxes {
     width: 100%;
-    min-height: 500px ;
-    background-color: #161623;
+    min-height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.TripleBoxes__Title {
     position: relative;
+    margin-top: 20px;
+    font-size: 4em;
+    font-family: 'Roboto';
+    /* color: #252839; */
+    color: green;
+    /* -webkit-text-stroke: 2px #383d52; */
+    -webkit-text-stroke: 2px yellow;
+    text-transform: uppercase;
+}
+
+
+.TripleBoxes__Title::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: var(--ColorBefore-TripleBoxesTitle-Text) ;
+    -webkit-text-stroke: var(--BeforeWebStroke-TripleBoxesTitle-Text );
+    border-right: var(--BorderRight-TripleBoxesTitle-Text);
+    overflow: var(--Overflow-TripleBoxesTitle-Text);
+    animation: var(--Animationn-TripleBoxesTitle-Text);
+}
+
+@keyframes TripleBoxesTitle {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+
+
+.ContainerTripleCards {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.TripleCards {
+    position: relative;
+    width: 350px;
+    height: 190px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+    transition: 0.5s;
+}
+
+.TripleCards:hover {
+    height: 450px;
+}
+
+.TripleCards__Lines {
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.TripleCards__Lines::before {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+    animation: AquaBorder 4s linear infinite;
+}
+
+@keyframes AquaBorder {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.TripleCards__Lines::after {
+    content: ' ';
+    position: absolute;
+    inset: 3px;
+    background-color: #292929;
+}
+
+
+.TripleCards__ImageBox {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.TripleCards:hover .TripleCards__ImageBox {
+    width: 250px;
+    height: 250px;
+}
+
+.TripleCards__ImageBox::before {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent);
+    animation: PinkBorder 6s linear infinite;
+}
+
+@keyframes PinkBorder {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.TripleCards__ImageBox::after {
+    content: ' ';
+    position: absolute;
+    inset: 3px;
+    background-color: #292929;
+}
+
+.TripleCards__Image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    filter: grayscale(1);
+}
+
+.TripleCards:hover .TripleCards__Image {
+    filter: grayscale(0);
+}
+
+.TripleCards__Content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.TripleCards__Details {
+    padding: 40px;
     text-align: center;
-    gap: 50px;
-    
-    
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
 }
 
-.TripleBoxes::after
-{
-    content: ' ';
-    background: linear-gradient(#f00 , #f0f);
-    width:100% ;
-    height: 100%;
-    position: absolute;
-    clip-path: circle(30% at right 70%);
-
+.TripleCards:hover .TripleCards__Details {
+    transform: translateY(0px);
 
 }
 
-.TripleBoxes::before
-{
-    content: ' ';
-    background: linear-gradient(#2193f3 , #e91e63);
-    width:100% ;
-    height: 100%;
-    position: absolute;
-    clip-path: circle(20% at 10% 10%);
-
-
+.TripleCards__PersonName {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #45f3ff;
+    line-height: 1.2em;
 }
 
-.TripleBoxes__CardContainer
-{
-    background-color: yellow;
-}
-
-
-
-.GlassmorphismCard{
+.TripleCards__PersonSkill {
+    font-size: 0.75em;
+    font-weight: 500;
     color: #fff;
-    width: 280px;
-    height: 400px;
-    background-color: rgba(255,255,255,0.1);
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5) ;
-    border-left: 1px solid rgba(255, 255, 255, 0.5) ;
-    backdrop-filter: blur(5px);
-    font-family: 'Open Sans', sans-serif;
-
-    /* overflow: hidden; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    position: relative;
-    z-index: 1;
-    transition: 1s;
 }
 
-.FrontFace
-{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    /* background-color: red; */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-    
+.TripleCards__Data {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-.BackFace
-{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: blue;
-    transform: translateY(180deg);
+.TripleCards__SocialNumber {
+    font-size: 1em;
+    color: #45f3ff;
+    line-height: 1.2em;
+    font-weight: 600;
 }
 
-.TripleBoxes__CardContainer:hover .GlassmorphismCard
-{
-    transform: translateY(180deg);
+.TripleCards__Factor {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #fff;
 }
 
+.TripleCards__Btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+.TripleCards__Button {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #45f3ff;
+    color: #222;
+    cursor: pointer;
+    opacity: 0.9;
+}
 
+.TripleCards__Button--WhiteColor {
+    background-color: #fff;
+}
 
-/*******  End Of 3pleBoxes Glassmorphism   *******/
+.TripleCards__Button:hover {
+    opacity: 1;
+}
+
+/************  EndOf 3ple Cards  ************/
+
 
 .SlideContent {
     width: 100%;
@@ -289,140 +457,232 @@ a {
 
 
 /*--------------Start Of SixthBoxes --------------*/
+
 .SectionSixthBoxes {
     width: 100%;
-    height: 890px;
+    min-height: 100vh;
+    background-color: #08001b;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 80px;
-    padding: 0 20px;
+    gap: 50px;
 }
 
-.FirstRowBoxes,
-.SecondRowBoxes {
+.SectionSixthBoxes__FirstRow,
+.SectionSixthBoxes__SecondRow {
     width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .SectionSixthBoxes__FirstRow
+{
+    background-color: #4311b9;
+
+}
+
+.SectionSixthBoxes__SecondRow
+{
+    background-color: red;
+} */
+
+.SixthCards {
+    width: 394px;
     height: 394px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 80px;
-}
-
-.CardContainer {
-    width: 30%;
-    height: 100%;
-    padding: 1.5%;
     position: relative;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1),
-        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-        5px 5px 5px rgba(0, 0, 0, 0.1),
-        -5px -5px 5px rgba(255, 255, 255, 0.5);
-
-    border-radius: 15px;
-}
-
-.Cards {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    background-color: #0c002b;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
-.CardContainer:hover .Cards {
-    transform: translateY(-50px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+.SixthCards::before {
+    content: ' ';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
 }
 
-.FirstRowBoxes__CardLeft,
-.FirstRowBoxes__CardRight,
-.SecondRowBoxes__CardMiddle {
-    background-color: #072f4c;
-}
-
-.SecondRowBoxes__CardLeft,
-.SecondRowBoxes__CardRight,
-.FirstRowBoxes__CardMiddle {
-    background-color: #084a79;
-}
-
-.CardContent {
-    padding: 10px;
+.SixthCards__Content {
+    width: 90%;
+    height: 90%;
+    padding: 4%;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    gap: 15px;
 }
 
-.SixthBoxIcon {
-
-    font-size: 6em;
+.SixthCards__Icon {
     position: absolute;
-    top: -5px;
-    right: 30px;
-    color: rgba(255, 255, 255, 0.05);
-    transition: 0.5s;
-}
-
-.CardContainer:hover .SixthBoxIcon {
-    color: rgba(255, 255, 255, 0.1);
-}
-
-.Card__Title {
-    font-size: 28px;
-    margin-top: 35px;
-    color: #cdcdcd;
-    font-weight: 400;
-    letter-spacing: 1px;
+    top: 25%;
+    right: 70px;
+    font-size: 4em;
+    font-weight: 800;
+    color: #1779ff;
     z-index: 1;
+    opacity: 0.1;
     transition: 0.5s;
 }
 
-.Card__Descrption {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    color: #9b9b9b;
-    z-index: 1;
-    transition: 0.5s;
+.SixthCards:hover .SixthCards__Icon {
+    opacity: 1;
+    transform: translateY(-70px);
 }
 
-.CardContainer:hover .Card__Title,
-.CardContainer:hover .Card__Descrption {
-    color: #fff;
-}
-
-.Card__Links {
-    min-width: 139px;
-    padding: 15px 30px;
-    margin-top: 15px;
-    background-color: #03a9f4;
-    color: #072f4c;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+.SixthCards__Title {
     position: relative;
-    display: inline-block;
-    border-radius: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
     transition: 0.5s;
 }
 
-.CardContainer:hover .Card__Links {
-    color: #03a9f4;
-    background-color: #072f4c;
+.SixthCards__Desciption {
+    position: relative;
+    font-size: 1em;
+    font-weight: 300;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-top: 20px;
 }
+
+.SixthCards:hover .SixthCards__Title,
+.SixthCards:hover .SixthCards__Desciption {
+    opacity: 1;
+}
+
+.SixthCards__Link {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 8px 15px;
+    color: #0c002b;
+    background-color: #fff;
+    text-transform: uppercase;
+
+}
+
+.SixthCards__Border {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.SixthCards:hover .SixthCards__Border {
+    opacity: 1;
+}
+
+.SixthCards__Border--Top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #1779ff);
+    animation: SixthCardsBorderTop 2s linear infinite;
+
+}
+
+.SixthCards__Border--Right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #1779ff);
+    animation: SixthCardsBorderRight 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.SixthCards__Border--Bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #1779ff);
+    animation: SixthCardsBorderBottom 2s linear infinite;
+}
+
+.SixthCards__Border--Left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #1779ff);
+    animation: SixthCardsBorderLeft 2s linear infinite;
+    animation-delay: 1s;
+
+
+}
+
+@keyframes SixthCardsBorderTop {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+
+    }
+}
+
+@keyframes SixthCardsBorderRight {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+
+    }
+}
+
+@keyframes SixthCardsBorderBottom {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+
+    }
+}
+
+@keyframes SixthCardsBorderLeft {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+
+    }
+}
+
+
+
+
+
 
 /*-------------- End Of SixthBoxes --------------*/
 
@@ -460,8 +720,3 @@ a {
     opacity: 0.5;
     font-size: 0.8em;
 }
-
-
-
-
-

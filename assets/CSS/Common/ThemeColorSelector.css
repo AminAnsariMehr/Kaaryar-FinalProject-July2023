@@ -157,7 +157,11 @@
 
 
     /* --- Slogan Complex --- */
-    --Color-SloganTitle-Text: #ffad00;
+    --Color-SloganTitle-Text : #ffad00;
+    --FontSize-SloganTitle-Text : 5vw;
+    --FontWeight-SloganTitle-Text: 500 ;
+    --FontFamily-SloganTitle-Text: 'Parisienne', sans-serif ;
+    /* --FontFamily-SloganTitle-Text: 'Poppins', sans-serif ; */
     --Color-LinearSlogan-Bg: linear-gradient(315deg, rgba(3, 19, 33, 0.6), rgba(3, 19, 33, 0.6));
 
 
@@ -245,7 +249,18 @@
 
 
 
+    /*--- Start Of TripleBoxes ---*/
+    --Color-TripleBoxesTitle-Text : ;
+    --WebStroke-TripleBoxesTitle-Text : ;
 
-    
+
+    --BorderRight-TripleBoxesTitle-Text:  3px solid #01fe87 ;
+    --Overflow-TripleBoxesTitle-Text : hidden;
+    --ColorBefore-TripleBoxesTitle-Text :#01fe87 ;
+    --BeforeWebStroke-TripleBoxesTitle-Text : 2px #383d52;
+    --Animationn-TripleBoxesTitle-Text :  6s TripleBoxesTitle linear infinite;
+
+
+  
 }
 /* ---------------- End Of Theme Packages ---------------- */

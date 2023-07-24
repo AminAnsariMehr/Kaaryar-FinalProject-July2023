@@ -263,11 +263,11 @@
 }
 
 .Slogan__Title--size-big {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 5vw;
-    font-weight: 300;
-    letter-spacing: 1px;
+    position: relative;
+    font-size: var(--FontSize-SloganTitle-Text);
     color: var(--Color-SloganTitle-Text);
+    font-family: var(--FontFamily-SloganTitle-Text);
+    font-weight: var(--FontWeight-SloganTitle-Text);
 }
 
 /*----------------- End Of Slogan ------------------*/

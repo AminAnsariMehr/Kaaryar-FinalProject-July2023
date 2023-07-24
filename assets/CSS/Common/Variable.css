@@ -61,6 +61,9 @@
 
     /* ------------------ Start Of Slogan Complex ------------------ */
     --Color-SloganTitle-Text: #fff;
+    --FontSize-SloganTitle-Text: 5vw;
+    --FontWeight-SloganTitle-Text: 300;
+    --FontFamily-SloganTitle-Text: 'Cormorant Garamond', serif;
     --Color-LinearSlogan-Bg: linear-gradient(315deg, rgba(8, 74, 121, 0.6), rgba(8, 74, 121, 0.6));
 
     /*--- ContainerServices ---*/
@@ -102,7 +105,7 @@
     /* --- Magic Boxes Content --- */
     --Width-MagicBoxes-Content: 447px;
     --Height-MagicBoxes-Content: 272.2px;
-    
+
     --Width-MagicBoxes-Responsive: 100%;
 
     --Padding-MagicBoxes-Content: 56px 40px;
@@ -137,6 +140,25 @@
     --Color-MagicBoxBtn2-Bg: #fff;
     --Color-MagicBoxBtn3-Bg: #fff;
     /* ------------------- End Of Slogan Complex ------------------ */
+
+
+
+    /*-------------------- Start Of TripleBoxes --------------------*/
+   
+    --Color-TripleBoxesTitle-Text : ;
+   
+   
+    --ColorBefore-TripleBoxesTitle-Text : none ;
+    --BorderRight-TripleBoxesTitle-Text: none;
+    --Animationn-TripleBoxesTitle-Text : none;
+    --Overflow-TripleBoxesTitle-Text : visible;
+    --BeforeWebStroke-TripleBoxesTitle-Text : 0px transparent;
+
+
+
+    /*--------------------- EndOf TripleBoxes ---------------------*/
+
+
 
 
 
