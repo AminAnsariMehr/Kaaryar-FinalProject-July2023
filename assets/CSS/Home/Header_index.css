@@ -63,7 +63,6 @@
     color: var(--Color-SocialMedia-Text);
 }
 
-
 .SocialMedia__Links:hover {
     transition: 0.5s;
 }
@@ -89,14 +88,9 @@
     background-color: var(--Color-Body-Bg);
     background: var(--Color-Navigation-Bg);
     font-family: 'Roboto';
-
-    /* position: fixed; */
-    /* z-index: 10; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* padding-left: 88px; */
-    
+    align-items: center;    
 }
 
 .NavMenu {
@@ -112,7 +106,6 @@
 .Logo {
     width: 392px;
     height: 100%;
-    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +221,6 @@
     transform: rotate(-45deg);
     transform-origin: left;
 }
-
 /*----------------- End Of BurgerMenu ------------------*/
 
 
@@ -236,7 +228,6 @@
 .Slogan {
     width: 100%;
     min-height: 100vh;
-    /* padding: 0px 88px; */
     background: var(--Color-LinearSlogan-Bg),
         url('./../../Images/HeroSlogan.png') no-repeat center center /cover;
     display: flex;
@@ -269,7 +260,6 @@
     font-family: var(--FontFamily-SloganTitle-Text);
     font-weight: var(--FontWeight-SloganTitle-Text);
 }
-
 /*----------------- End Of Slogan ------------------*/
 
 
@@ -541,5 +531,4 @@
     color: var(--Color-MagicBoxBtn3-Text);
     background-color: var(--Color-MagicBoxBtn3-Bg);
 }
-
 /*-------------- End Of Magic Boxes ---------------*/

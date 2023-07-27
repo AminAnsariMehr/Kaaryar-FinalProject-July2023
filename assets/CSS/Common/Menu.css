@@ -15,7 +15,6 @@
     background-color: transparent;
 }
 
-
 .Menu__Links {
     color: var(--Color-MenuLinks-Text);
     position: relative;
@@ -28,7 +27,6 @@
     letter-spacing: 0.05rem;
     transition: 0.2s;
 }
-
 
 /*------- Start Of  Snaky Effect Menu -------*/
 .Menu__Links:hover {
@@ -163,7 +161,6 @@
 
 .SearchSection__LabelSearchIcon:hover {
     color: var(--Color-SearchIconHover-Text);
-
 }
 
 /*--- Start Search Box Container ---*/
@@ -224,7 +221,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .SearchSection__searchInput:checked~.SearchSection__SearchBoxContainer {
     display: flex;

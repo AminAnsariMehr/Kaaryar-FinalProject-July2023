@@ -113,7 +113,6 @@
     .Slogan__text--BigFontSize {
         font-size: 8vw;
     }
-
     /************* End Of Header **************/
 
 
@@ -148,9 +147,10 @@
     .SeperatorIcon__SpanIcon::before {
         width: 50px;
     }
-
     /************** End Of Main **************/
 
+
+    
     .SlideContent {
         width: 100%;
         min-height: 300px;

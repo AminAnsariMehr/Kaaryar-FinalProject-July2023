@@ -1,5 +1,9 @@
 :root {
 
+    /* --- Body --- */
+    --Color-Body-Bg: #fff;
+
+
     /* --- Pseudo Selection --- */
     --Color-Selection-Text: #fff;
     --Color-Selection-Bg: #084a79;
@@ -144,22 +148,174 @@
 
 
     /*-------------------- Start Of TripleBoxes --------------------*/
-   
-    --Color-TripleBoxesTitle-Text : ;
-   
-   
-    --ColorBefore-TripleBoxesTitle-Text : none ;
+    --BgColor-InnerContainer-Part1: none;
+    --Width-InnerContainer-Part1: 95%;
+    --BgColor-InnerContainer-Part2: none;
+    --Bg-MoonLight-Shadow: none;
+
+
+    /* --- Title --- */
+    --Color-TripleBoxesTitleAnimated-Text: #222222;
+    --WebStroke-TripleBoxesTitle-Text: 0px #222222;
+    --FontFamily-TripleBoxesTitle-Text: 'Cormorant Garamond', serif;
+    --FontSize-TripleBoxesTitle-Text: 50px;
+    --FontWeight-TripleBoxesTitle-Text: 300;
+    --TextTranform-TripleBoxesTitle-Text: capitalize;
+
+
     --BorderRight-TripleBoxesTitle-Text: none;
-    --Animationn-TripleBoxesTitle-Text : none;
-    --Overflow-TripleBoxesTitle-Text : visible;
-    --BeforeWebStroke-TripleBoxesTitle-Text : 0px transparent;
+    --Overflow-TripleBoxesTitle-Text: visible;
+    --ColorBefore-TripleBoxesTitle-Text: none;
+    --BeforeWebStroke-TripleBoxesTitle-Text: 0px transparent;
+    --Animationn-TripleBoxesTitle-Text: none;
+
+
+    /* --- Common --- */
+    --Transform-TripleBoxes-Content: translateY(145px);
+    --Filter-TripleBoxes-GrayScale: grayscale(1);
+    --Width-TripleBoxesHover-ImageBox: 150px;
+    --Height-TripleBoxesHover-ImageBox: 150px;
+    --Height-TripleBoxesHover-BigBoxes: 190px;
 
 
 
-    /*--------------------- EndOf TripleBoxes ---------------------*/
+    /* --- First Box --- */
+    --ColorAnimatedBigBox-TripleBoxesFirst-Border: linear-gradient(transparent, transparent, transparent, transparent, transparent);
+    --ColorStaticBigBox-TripleBoxesFirst-Border: #072f4c;
+    --ColorBigBox-TripleBoxesFirst-Bg: #072f4c;
+
+    --ColorAnimatedSmallBox-TripleBoxesFirst-Border: linear-gradient(transparent, transparent, transparent, transparent, transparent);
+    --ColorStaticSmallBox-TripleBoxesFirst-Border: #072f4c;
+    --ColorSmallBox-TripleBoxesFirst-Bg: #072f4c;
+
+    --Color-TripleBoxesFirst-PersonName: #fff;
+    --Color-TripleBoxesFirst-SocialNumber: #fff;
+
+
+    /* --- Second Box --- */
+    --ColorAnimatedBigBox-TripleBoxesSecond-Border: linear-gradient(transparent, transparent, transparent, transparent, transparent);
+    --ColorStaticBigBox-TripleBoxesSecond-Border: #0c5387;
+    --ColorBigBox-TripleBoxesSecond-Bg: #0c5387;
+
+    --ColorAnimatedSmallBox-TripleBoxesSecond-Border: linear-gradient(transparent, transparent, transparent, transparent, transparent);
+    --ColorStaticSmallBox-TripleBoxesSecond-Border: #0c5387;
+    --ColorSmallBox-TripleBoxesSecond-Bg: #0c5387;
+
+    --Color-TripleBoxesSecond-PersonName: #fff;
+    --Color-TripleBoxesFirst-SocialNumber: #fff;
+
+
+    /* --- Third Box --- */
+    --ColorAnimatedBigBox-TripleBoxesThird-Border: linear-gradient(transparent, transparent, transparent, transparent, transparent);
+    --ColorStaticBigBox-TripleBoxesThird-Border: #072f4c;
+    --ColorBigBox-TripleBoxesThird-Bg: #072f4c;
+
+    --ColorAnimatedSmallBox-TripleBoxesThird-Border: linear-gradient(transparent, transparent, transparent, transparent, transparent);
+    --ColorStaticSmallBox-TripleBoxesThird-Border: #072f4c;
+    --ColorSmallBox-TripleBoxesThird-Bg: #072f4c;
+
+    --Color-TripleBoxesThird-PersonName: #fff;
+    --Color-TripleBoxesFirst-SocialNumber: #fff;
+    /*--------------------- End Of TripleBoxes --------------------*/
+
+
+    /*------------------- Start Of Slide Content ------------------*/
+    --Color-SlideContent-Bg: #084a79;
+    --Color-SlideContent-Text: #fff;
+    --FontFamily-SlideContentFirstP-Text: 'Cormorant Garamond', serif;
+    --FontFamily-SlideContentSecondP-Text: 'Open Sans', sans-serif;
+    /*-------------------- End Of Slide Content -------------------*/
+
+
+    /*-------------------- Start Of SixthBoxes --------------------*/
+    /* --- Common --- */
+    --Color-SixBoxesBefore-Bg: none;
+    --Position-SixCard-Icon: static;
+    --Color-SixCard-Icon: #fff;
+    --Opacity-SixCard-Icon: 1;
+    --Transform-SixCardHover-Icon: translateY(0px);
+    --Opacity-SixCardTitleandDescription-Text: 1;
+    --FontFamily-SixCardsTitle-Text: 'Cormorant Garamond', serif;
+    --FontFamily-SixCardsDescription-Text: 'Open Sans', sans-serif;
+
+    --Color-SixCardsTitle-Text: #fff;
+    --Color-SixCardsDescription-Text: #fff;
+
+    --FontSize-SixCardsTitle-Text: 1.8em;
+    --FontSize-SixCardsDescription-Text: 1em;
+    --FontWeight-SixCardsTitle-Text: 300;
+    --FontWeight-SixCardsDescription-Text: 400;
+
+    --Display--SixCardsButton--UI1: inline-block;
+    --Display--SixCardsButton--UI2: none;
+
+    --SnakeBorder-SixCards-Top: linear-gradient(to right, transparent, transparent);
+    --SnakeBorder-SixCards-Right: linear-gradient(to bottom, transparent, transparent);
+    --SnakeBorder-SixCards-Bottom: linear-gradient(to left, transparent, transparent);
+    --SnakeBorder-SixCards-Left: linear-gradient(to Top, transparent, transparent);
+
+
+    /* --- First Box --- */
+    --Color--SixBoxesFirst-Bg: #072f4c;
+    --Color-SixCardFirst-Icon: #fff;
+    --Color-SixCardFirst-Title: #fff;
+
+    /* --- Second Box --- */
+    --Color--SixBoxesSecond-Bg: #0c5387;
+    --Color-SixCardSecond-Icon: #fff;
+    --Color-SixCardSecond-Title: #fff;
+
+    /* --- Third Box --- */
+    --Color--SixBoxesThird-Bg: #072f4c;
+    --Color-SixCardThird-Icon: #fff;
+    --Color-SixCardThird-Title: #fff;
+
+    /* --- Fourth Box --- */
+    --Color--SixBoxesFourth-Bg: #0c5387;
+    --Color-SixCardFourth-Icon: #fff;
+    --Color-SixCardFourth-Title: #fff;
+
+    /* --- Fifth Box --- */
+    --Color--SixBoxesFifth-Bg: #072f4c;
+    --Color-SixCardFifth-Icon: #fff;
+    --Color-SixCardFifth-Title: #fff;
+
+    /* --- Sixth Box --- */
+    --Color--SixBoxesSixth-Bg: #0c5387;
+    --Color-SixCardSixth-Icon: #fff;
+    --Color-SixCardSixth-Title: #fff;
+    /*--------------------- End Of SixthBoxes --------------------*/
+
+
+    /* ------- Start Of OperateSection ------- */
+
+    --Color-OperateSectionTitle-Text: #222222;
+    --FontFamily-OperateSectionTitle-Text: 'Cormorant Garamond', serif;
+    --Color-OperateSectionDescription-Text: #b0b0b0;
+
+    /* ------- End Of OperateSection ------- */
 
 
 
+    /* --- Start Of SlideContentLessWidth --- */
 
+    --Color-SlideContentLessWidth-Text: #fff;
+    --Color-SlideContentLessWidth-Bg: #084a79;
+    --FontFamily-SlideContentLessWidth-Text: 'Open Sans', sans-serif;
+
+    /* ---- End Of SlideContentLessWidth ---- */
+
+
+    /*--------------------- Start Of Footer ---------------------*/
+    --Color-ContactStrong-Text: #084a79;
+    --Color-FooterLinksCopyright-Text: #084a79;
+    --Color-FooterLinksCopyrightHover-Text: #000;
+    --Color-ContactLinksFirst-Bg: #084a79;
+    --Color-ContactLinksSecond-Bg: #084a79;
+    --Color-ContactLinksThird-Bg: #084a79;
+    --Color-ContactLinksFourth-Bg: #084a79;
+    --Color-ContactLinksFifth-Bg: #084a79;
+    --Color-ContactLinksSixth-Bg: #084a79;
+    /*---------------------- End Of Footer ----------------------*/
 
 }

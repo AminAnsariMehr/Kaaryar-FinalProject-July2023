@@ -26,7 +26,7 @@
     background-color: var(--Color-ThemePalettIconHover-Bg);
 }
 
-.ThemePackages__Input:checked ~ .ThemeSchemePicker {
+.ThemePackages__Input:checked~.ThemeSchemePicker {
     left: 0;
     transform: translate(0, 0);
 }
@@ -84,7 +84,7 @@
 
 
 .ThemeSchemePicker__Input--NeonLight-Color {
-    --radio-color: #FFAD00;
+    --radio-color: #ffad00;
 }
 
 
@@ -97,12 +97,15 @@
 
 
 :root:has(.ThemeSchemePicker__Input--NeonLight-Color:checked) {
+    /* --- Body --- */
+    --Color-Body-Bg: #031321;
+
     /* --- Pseudo Selection --- */
-    --Color-Selection-Text: #FFAD00;
+    --Color-Selection-Text: #ffad00;
     --Color-Selection-Bg: #031321;
 
     /* --- Social Media --- */
-    --Color-SocialMedia-Bg: #FFAD00;
+    --Color-SocialMedia-Bg: #ffad00;
     --Color-SocialMedia-Text: #031321;
     --Color-SocialMedia-Border: #e6a211;
 
@@ -119,8 +122,8 @@
     --Color-StrokeLogoBorder-Text: #91880e 1px;
     --Color-StrokeLogoFill-Text: transparent;
     --Radius-ImageLogo-Border: 20px;
-    --Color-DescLogo-Text: #FFAD00;
-    --Color-LinearTextLogo-Bg: linear-gradient(315deg, #FFAD00, #0a2236, #FFAD00, #0a2236, #FFAD00, #0a2236);
+    --Color-DescLogo-Text: #ffad00;
+    --Color-LinearTextLogo-Bg: linear-gradient(315deg, #ffad00, #0a2236, #ffad00, #0a2236, #ffad00, #0a2236);
 
     /* ------- Menu ------- */
     --Color-MenuLinks-Text: #2196f3;
@@ -141,10 +144,10 @@
     /* --- SearchBox Section --- */
     --Color-SearchIcon-Text: #2196f3;
     --Color-SearchIconHover-Text: #255784;
-    --Color-SearchBox-Bg: #FFAD00;
+    --Color-SearchBox-Bg: #ffad00;
     --Color-SearchBox-Shadow: none;
     --Radius-SearchBox-Border: 4px;
-    --Color-SearchBoxAfter-Bg: #FFAD00;
+    --Color-SearchBoxAfter-Bg: #ffad00;
     --Color-SearchPlaceHoder-Text: #031321;
     --Color-InputSearch-Bg: #008cffb8;
     --Color-InputSearch-Border: #2195f3b8;
@@ -157,9 +160,9 @@
 
 
     /* --- Slogan Complex --- */
-    --Color-SloganTitle-Text : #ffad00;
-    --FontSize-SloganTitle-Text : 5vw;
-    --FontWeight-SloganTitle-Text: 500 ;
+    --Color-SloganTitle-Text: #ffad00;
+    --FontSize-SloganTitle-Text: 5vw;
+    --FontWeight-SloganTitle-Text: 500;
     --FontFamily-SloganTitle-Text: 'Parisienne', cursive;
     /* --FontFamily-SloganTitle-Text: 'Poppins', sans-serif ; */
     --Color-LinearSlogan-Bg: linear-gradient(315deg, rgba(3, 19, 33, 0.6), rgba(3, 19, 33, 0.6));
@@ -175,7 +178,7 @@
     --Width--MagicBox: 320px;
     --Height--MagicBox: 400px;
 
-    --Width-MagicBoxes-Responsive : 60%;
+    --Width-MagicBoxes-Responsive: 60%;
 
     --Padding--MagicBox: 0 20px;
     --Margin--MagicBox: 30px 40px;
@@ -186,7 +189,7 @@
     --Width-MagicBoxes-After: 50%;
     --Height-MagicBoxes-After: 100%;
 
-    --Color--MagicBox1-Bg: linear-gradient(45deg, #D22730, #FFAD00);
+    --Color--MagicBox1-Bg: linear-gradient(45deg, #D22730, #ffad00);
     --Color--MagicBox2-Bg: linear-gradient(45deg, #4D4DFF, #C724B1);
     --Color--MagicBox3-Bg: linear-gradient(45deg, #DB3EB1, #2196f3);
 
@@ -216,18 +219,18 @@
 
     --Backdrop-MagicBoxes-Content: blur(10px);
 
-    --BgColor-MagicBox1-Content : rgba(46, 46, 46, 0.1) ;
-    --BgColor-MagicBox2-Content :  rgba(46, 46, 46, 0.1) ;
-    --BgColor-MagicBox3-Content : rgba(46, 46, 46, 0.1) ;
+    --BgColor-MagicBox1-Content: rgba(46, 46, 46, 0.1);
+    --BgColor-MagicBox2-Content: rgba(46, 46, 46, 0.1);
+    --BgColor-MagicBox3-Content: rgba(46, 46, 46, 0.1);
 
-    --BgColor--MagicBoxesHover1-Content: rgba(255, 255, 255, 0.2) ;
+    --BgColor--MagicBoxesHover1-Content: rgba(255, 255, 255, 0.2);
     --BgColor--MagicBoxesHover2-Content: rgba(255, 255, 255, 0.2);
     --BgColor--MagicBoxesHover3-Content: rgba(255, 255, 255, 0.2);
 
 
     --Color-MagicBox1-Title: #2196f3;
-    --Color-MagicBox2-Title: #FFAD00;
-    --Color-MagicBox3-Title: #FFAD00;
+    --Color-MagicBox2-Title: #ffad00;
+    --Color-MagicBox3-Title: #ffad00;
 
     --Color-MagicBox1-Text: #ffad00;
     --Color-MagicBox2-Text: #ffad00;
@@ -249,18 +252,188 @@
 
 
 
-    /*--- Start Of TripleBoxes ---*/
-    --Color-TripleBoxesTitle-Text : ;
-    --WebStroke-TripleBoxesTitle-Text : ;
+    /*------------- Start Of TripleBoxes -------------*/
+
+    --BgColor-InnerContainer-Part1: #21233c;
+    --Width-InnerContainer-Part1: 100%;
+
+    --BgColor-InnerContainer-Part2: #031321;
+    --Bg-MoonLight-Shadow: inline-block;
 
 
-    --BorderRight-TripleBoxesTitle-Text:  3px solid #01fe87 ;
-    --Overflow-TripleBoxesTitle-Text : hidden;
-    --ColorBefore-TripleBoxesTitle-Text :#01fe87 ;
-    --BeforeWebStroke-TripleBoxesTitle-Text : 2px #383d52;
-    --Animationn-TripleBoxesTitle-Text :  6s TripleBoxesTitle linear infinite;
+    /* --- Title --- */
+    --Color-TripleBoxesTitleAnimated-Text: #21233c;
+    --WebStroke-TripleBoxesTitle-Text: 2px #0b2237;
+    --FontFamily-TripleBoxesTitle-Text: 'Poppins', sans-serif;
+    --FontSize-TripleBoxesTitle-Text: 4em;
+    --FontWeight-TripleBoxesTitle-Text: 700;
+    --TextTranform-TripleBoxesTitle-Text: uppercase;
+
+    --BorderRight-TripleBoxesTitle-Text: 3px solid #2196f3;
+    --Overflow-TripleBoxesTitle-Text: hidden;
+    --ColorBefore-TripleBoxesTitle-Text: #ffad00;
+    --BeforeWebStroke-TripleBoxesTitle-Text: 2px #0b2237;
+    --Animationn-TripleBoxesTitle-Text: 6s TripleBoxesTitle linear infinite;
 
 
-  
+    /* --- Common --- */
+    --Transform-TripleBoxes-Content: translateY(0px);
+    --Filter-TripleBoxes-GrayScale: grayscale(0);
+    --Width-TripleBoxesHover-ImageBox: 250px;
+    --Height-TripleBoxesHover-ImageBox: 250px;
+    --Height-TripleBoxesHover-BigBoxes: 450px;
+
+
+
+    /* --- First Box --- */
+    --ColorAnimatedBigBox-TripleBoxesFirst-Border: linear-gradient(transparent, #ff0000, #ff0000, #ff0000, transparent);
+    --ColorStaticBigBox-TripleBoxesFirst-Border: #000;
+    --ColorBigBox-TripleBoxesFirst-Bg: #292929;
+
+    --ColorAnimatedSmallBox-TripleBoxesFirst-Border: linear-gradient(transparent, #ffad00, #ffad00, #ffad00, transparent);
+    --ColorStaticSmallBox-TripleBoxesFirst-Border: #000;
+    --ColorSmallBox-TripleBoxesFirst-Bg: #292929;
+
+    --Color-TripleBoxesFirst-PersonName: #ffad00;
+    --Color-TripleBoxesFirst-SocialNumber: #ffad00;
+    --BgColor-TripleBoxesFirst-Button: #ffad00;
+
+
+    /* --- Second Box --- */
+    --ColorAnimatedBigBox-TripleBoxesSecond-Border: linear-gradient(transparent, #ff0000, #ff0000, #ff0000, transparent);
+    --ColorStaticBigBox-TripleBoxesSecond-Border: #000;
+    --ColorBigBox-TripleBoxesSecond-Bg: #292929;
+
+    --ColorAnimatedSmallBox-TripleBoxesSecond-Border: linear-gradient(transparent, #DB3EB1, #DB3EB1, #DB3EB1, transparent);
+    --ColorStaticSmallBox-TripleBoxesSecond-Border: #000;
+    --ColorSmallBox-TripleBoxesSecond-Bg: #292929;
+
+    --Color-TripleBoxesSecond-PersonName: #DB3EB1;
+    --Color-TripleBoxesSecond-SocialNumber: #DB3EB1;
+    --BgColor-TripleBoxesSecond-Button: #DB3EB1;
+
+
+    /* --- Third Box --- */
+    --ColorAnimatedBigBox-TripleBoxesThird-Border: linear-gradient(transparent, #ff0000, #ff0000, #ff0000, transparent);
+    --ColorStaticBigBox-TripleBoxesThird-Border: #000;
+    --ColorBigBox-TripleBoxesThird-Bg: #292929;
+
+    --ColorAnimatedSmallBox-TripleBoxesThird-Border: linear-gradient(transparent, #44D62C, #44D62C, #44D62C, transparent);
+    --ColorStaticSmallBox-TripleBoxesThird-Border: #000;
+    --ColorSmallBox-TripleBoxesThird-Bg: #292929;
+
+    --Color-TripleBoxesThird-PersonName: #44D62C;
+    --Color-TripleBoxesThird-SocialNumber: #44D62C;
+    --BgColor-TripleBoxesThird-Button: #44D62C;
+
+    /*-------------- End Of TripleBoxes --------------*/
+
+
+
+
+    /*------------- Start Of Slide Content ------------*/
+
+    --Color-SlideContent-Bg: #21233c;
+    --Color-SlideContent-Text: #ffad00;
+    --FontFamily-SlideContentFirstP-Text: 'Roboto', sans-serif;
+    --FontFamily-SlideContentSecondP-Text: 'Roboto', sans-serif;
+
+    /*-------------- End Of Slide Content -------------*/
+
+
+
+    /*-------------- Start Of SixthBoxes --------------*/
+    /* --- Common --- */
+    --Color-SixBoxesBefore-Bg: rgba(255, 255, 255, 0.1);
+    --Position-SixCard-Icon: absolute;
+    --Color-SixCard-Icon: #1779ff;
+    --Opacity-SixCard-Icon: 0.1;
+    --Transform-SixCardHover-Icon: translateY(-80px);
+    --Opacity-SixCardTitleandDescription-Text: 1;
+    --FontFamily-SixCardsTitle-Text: 'Parisienne', cursive;
+    --FontFamily-SixCardsDescription-Text: 'Poppins', sans-serif;
+
+    --Color-SixCardsTitle-Text: #ffad00;
+    --Color-SixCardsDescription-Text: #fff;
+
+    --FontSize-SixCardsTitle-Text: 2.4em;
+    --FontSize-SixCardsDescription-Text: 1em;
+    --FontWeight-SixCardsTitle-Text: 300;
+    --FontWeight-SixCardsDescription-Text: 300;
+
+    --Display--SixCardsButton--UI1: none;
+    --Display--SixCardsButton--UI2: flex;
+
+    --SnakeBorder-SixCards-Top: linear-gradient(to right, transparent, #ffad00);
+    --SnakeBorder-SixCards-Right: linear-gradient(to bottom, transparent, #ffad00);
+    --SnakeBorder-SixCards-Bottom: linear-gradient(to left, transparent, #ffad00);
+    --SnakeBorder-SixCards-Left: linear-gradient(to Top, transparent, #ffad00);
+
+
+    /* --- First Box --- */
+    --Color--SixBoxesFirst-Bg: #000;
+    --Color-SixCardFirst-Icon: red;
+    --Color-SixCardFirst-Title: red;
+
+    /* --- Second Box --- */
+    --Color--SixBoxesSecond-Bg: #151515;
+    --Color-SixCardSecond-Icon: #ff1f71;
+    --Color-SixCardSecond-Title: #ff1f71;
+
+    /* --- Third Box --- */
+    --Color--SixBoxesThird-Bg: #000;
+    --Color-SixCardThird-Icon: #1eff45;
+    --Color-SixCardThird-Title: #1eff45;
+
+    /* --- Fourth Box --- */
+    --Color--SixBoxesFourth-Bg: #151515;
+    --Color-SixCardFourth-Icon: #2bd2ff;
+    --Color-SixCardFourth-Title: #2bd2ff;
+
+    /* --- Fifth Box --- */
+    --Color--SixBoxesFifth-Bg: #000;
+    --Color-SixCardFifth-Icon: #ffad00;
+    --Color-SixCardFifth-Title: #ffad00;
+
+    /* --- Sixth Box --- */
+    --Color--SixBoxesSixth-Bg: #151515;
+    --Color-SixCardSixth-Icon: orangered;
+    --Color-SixCardSixth-Title: orangered;
+
+    /*--------------- End Of SixthBoxes --------------*/
+
+
+
+
+    /* --- Start Of OperateSection --- */
+    --Color-OperateSectionTitle-Text: #ffad00;
+    --FontFamily-OperateSectionTitle-Text: 'Parisienne', cursive;
+    --Color-OperateSectionDescription-Text: #2196f3;
+    /* --- End Of OperateSection --- */
+
+
+    /* --- Start Of SlideContentLessWidth --- */
+    --Color-SlideContentLessWidth-Text: #ffad00;
+    --Color-SlideContentLessWidth-Bg: #21233c;
+    --FontFamily-SlideContentLessWidth-Text: 'Roboto', sans-serif;
+    --FontFamily-SlideContentLessWidth-Text: 'Poppins', sans-serif;
+    /* ---- End Of SlideContentLessWidth ---- */
+
+
+
+
+    /*---------------- Start Of Footer ----------------*/
+    --Color-ContactStrong-Text: #ffad00;
+    --Color-FooterLinksCopyright-Text: #ffad00;
+    --Color-FooterLinksCopyrightHover-Text: #2196f3;
+    --Color-ContactLinksFirst-Bg: red;
+    --Color-ContactLinksSecond-Bg: #ff1f71;
+    --Color-ContactLinksThird-Bg: #1eff45;
+    --Color-ContactLinksFourth-Bg: #2bd2ff;
+    --Color-ContactLinksFifth-Bg: #ffad00;
+    --Color-ContactLinksSixth-Bg: orangered;
+    /*----------------- End Of Footer -----------------*/
+
 }
+
 /* ---------------- End Of Theme Packages ---------------- */

@@ -18,10 +18,9 @@
     box-sizing: border-box;
 }
 
-::selection
-{
-    color : var( --Color-Selection-Text); 
-    background-color : var(--Color-Selection-Bg) ;
+::selection {
+    color: var(--Color-Selection-Text);
+    background-color: var(--Color-Selection-Bg);
 }
 
 li {
@@ -44,8 +43,7 @@ a {
     justify-content: center;
 }
 
-.main
-{
+.main {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -62,15 +60,14 @@ a {
 
 .InnerContainer--WithPaddingTop {
     width: 95%;
-    padding: 130px 50px;
+    padding: 0px 50px 100px 50px;
     display: flex;
     flex-direction: column;
 }
 
 
 /********** Start Of Service And Details **********/
-.ServiceAndDetails
-{
+.ServiceAndDetails {
     color: #383838;
     width: 100%;
     display: flex;
@@ -79,18 +76,15 @@ a {
     gap: 80px;
 }
 
-.ServiceOverview
-{
+.ServiceOverview {
     width: 629px;
 }
 
-.Details
-{
+.Details {
     width: 629px;
 }
 
-.ServiceAndDetails__Title
-{
+.ServiceAndDetails__Title {
     letter-spacing: 1px;
     font-weight: 300;
     font-size: 28px;
@@ -98,23 +92,21 @@ a {
     padding-bottom: 10px;
 }
 
-.ServiceAndDetails__Description
-{
+.ServiceAndDetails__Description {
     margin: 0.85em 0;
     font-family: 'open sans', Helvetica, Arial, sans-serif;
     line-height: 1.65em;
 }
 
 .ServiceAndDetails__Strong,
-.ServiceAndDetails__link
-{
+.ServiceAndDetails__link {
     color: #084a79;
 }
 
-.ServiceAndDetails__link:hover
-{
-    color:#3091d1 ;
+.ServiceAndDetails__link:hover {
+    color: #3091d1;
 }
+
 /********** End Of Service And Details ***********/
 
 
@@ -162,12 +154,12 @@ a {
     height: 1px;
     background-color: #8a8a8a;
 }
+
 /************* End Of Seperator Icon*************/
 
 
 /************** Start Of Two Boxs ***************/
-.DoubleRowBoxes
-{
+.DoubleRowBoxes {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -176,73 +168,64 @@ a {
     margin: 50px 0;
 }
 
-.DoubleRowBoxes__BlueBox ,
-.DoubleRowBoxes__WhiteBox
-{
+.DoubleRowBoxes__BlueBox,
+.DoubleRowBoxes__WhiteBox {
     min-height: 860px;
     padding: 40px;
-    display: flex ;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
 }
 
-.DoubleRowBoxes__BlueBox
-{
+.DoubleRowBoxes__BlueBox {
     width: 30%;
     background-color: #125483;
     color: #fff;
 }
 
-.DoubleRowBoxes__WhiteBox
-{
+.DoubleRowBoxes__WhiteBox {
     width: 65%;
     background-color: #f7f7f7;
     color: #444;
 }
 
-.IconBlueIcon
-{
+.IconBlueIcon {
     font-size: 70px;
 }
 
 .BlueBox__Title,
-.WhiteBox__Title
-{
+.WhiteBox__Title {
     margin: 0.85em 0;
     letter-spacing: 1px;
-    font-size:28px ;
+    font-size: 28px;
     font-weight: 300;
     font-family: 'cormorant garamond', Helvetica, Arial, sans-serif;
 }
 
 .BlueBox__Description,
-.WhiteBox__Description
-{
+.WhiteBox__Description {
     margin: 0.85em 0;
-    font-size: 16px ;
+    font-size: 16px;
     font-family: 'open sans', Helvetica, Arial, sans-serif;
 }
 
 .BlueBox__Title,
-.BlueBox__Description
-{
+.BlueBox__Description {
     text-align: center;
     margin: 0.85em 0;
 }
 
 .WhiteBox__Title,
-.WhiteBox__Description
-{
+.WhiteBox__Description {
     width: 100%;
     text-align: left;
-    line-height: 1.5em ;
+    line-height: 1.5em;
     margin: 0.85em 0;
 }
 
-.BlueBox__Link
-{
+.BlueBox__Link {
     color: #000;
     font-family: 'open sans', Helvetica, Arial, sans-serif;
     background-color: #fff;
@@ -254,39 +237,34 @@ a {
     margin: 12px 0;
 }
 
-.WhiteBox__StrongWord
-{
+.WhiteBox__StrongWord {
     color: #084a79;
     font-weight: bold;
 }
 
-.WhiteBox__blockquote
-{
+.WhiteBox__blockquote {
     padding-left: 20px;
     color: #919191;
     font-family: 'open sans', Helvetica, Arial, sans-serif;
-    border-left: 7px solid #084a79 ;
+    border-left: 7px solid #084a79;
 }
 
-.WhiteBox__Descriptionblockquote
-{
+.WhiteBox__Descriptionblockquote {
     font-size: 16px;
-    font-size: 1.235em ;
-    line-height: 1.5em ;
+    font-size: 1.235em;
+    line-height: 1.5em;
     word-spacing: 1px;
 }
 
-.WhiteBox__list
-{
+.WhiteBox__list {
     margin: 0.85em 0 20px 2em;
     width: 100%;
     text-align: left;
-    line-height: 1.5em ;
+    line-height: 1.5em;
     font-size: 17px;
 }
 
-.WhiteBox__Item
-{
+.WhiteBox__Item {
     margin-left: 1em;
     list-style: disc outside;
     font-family: 'open sans', Helvetica, Arial, sans-serif;
@@ -297,7 +275,7 @@ a {
 
 
 
-/*************** Start Of Slide Content **************/
+/************* Start Of Slide Content ************/
 .SlideContent {
     width: 100%;
     height: 235px;
@@ -337,5 +315,5 @@ a {
     border-radius: 100px;
     font-family: 'Open Sans', sans-serif;
 }
-/*************** End Of Slide Content ***************/
 
+/*************** End Of Slide Content ***************/

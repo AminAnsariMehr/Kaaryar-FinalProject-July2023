@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/*-------------------------- Styles --------------------------*/
 @import url('./Common/Variable.css');
 @import url('./Common/ThemeColorSelector.css');
 @import url('./Common/Menu.css');
@@ -21,6 +23,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ::selection {
     color: var(--Color-Selection-Text);
     background-color: var(--Color-Selection-Bg);
@@ -34,6 +40,9 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: var(--Color-Body-Bg);
+}
 
 .Container {
     max-width: 1536px;
@@ -60,22 +69,41 @@ a {
 }
 
 .InnerContainer--WithPaddingTopPart1 {
-    background: blue;
-    padding: 50px 50px;
+    width: var(--Width-InnerContainer-Part1);
+    background: var(--BgColor-InnerContainer-Part1);
+    padding: 50px 50px 0px 50px;
+    position: relative;
 }
 
+.InnerContainer--WithPaddingTopPart1::before {
+    content: ' ';
+    display: var(--Bg-MoonLight-Shadow);
+    width: 58em;
+    height: 58em;
+    position: absolute;
+    top: 1%;
+    left: 19.5%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #031321, #fff67eb9);
+    box-shadow: -7rem 7rem 56rem 3rem #fff67e56;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+
 .InnerContainer--WithPaddingTopPart2 {
-    background: purple;
+    background: var(--BgColor-InnerContainer-Part2);
+    padding: 50px 50px;
+    margin: 0 auto;
 }
 
 .InnerContainer--WithPaddingTopPart3 {
-    background: aqua;
+    padding: 50px 50px;
 }
-
 
 .main {
     width: 100%;
-    /* min-height: 100vh; */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,16 +115,16 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    z-index: 1;
 }
 
 .OperateSection__Title {
     width: 100%;
-    color: #222222;
+    color: var(--Color-OperateSectionTitle-Text);
+    font-family: var(--FontFamily-OperateSectionTitle-Text);
     text-align: center;
     font-size: 50px;
     font-weight: 300;
-    /* background-color: gray; */
 }
 
 .OperateSection__Desciption {
@@ -104,10 +132,32 @@ a {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    /* background-color: pink; */
     margin: 0.85em 0;
-    color: #383838;
+    color: var(--Color-OperateSectionDescription-Text);
     line-height: 1.65em;
+}
+
+.GoUp__Icon {
+    position: fixed;
+    top: 92%;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    border-radius: 2px;
+}
+
+.GoUp__Link {
+    color: #b0b0b0;
+    font-size: 22px;
+}
+
+.GoUp__Link:hover {
+    color: #000;
 }
 
 .SeperatorIcon {
@@ -115,8 +165,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 65px 0;
-    /* background-color: #852727; */
+    margin: 25px 0;
 }
 
 .bx-diamond {
@@ -132,7 +181,6 @@ a {
     justify-content: center;
     align-items: center;
 }
-
 
 .SeperatorIcon__SpanIcon::after {
     content: ' ';
@@ -157,7 +205,6 @@ a {
 }
 
 
-
 /***********  Start Of 3ple Cards  ***********/
 .TripleBoxes {
     width: 100%;
@@ -166,20 +213,18 @@ a {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    gap: 25px;
 }
 
 .TripleBoxes__Title {
     position: relative;
-    margin-top: 20px;
-    font-size: 4em;
-    font-family: 'Roboto';
-    /* color: #252839; */
-    color: green;
-    /* -webkit-text-stroke: 2px #383d52; */
-    -webkit-text-stroke: 2px yellow;
-    text-transform: uppercase;
+    font-size: var(--FontSize-TripleBoxesTitle-Text);
+    font-family: var(--FontFamily-TripleBoxesTitle-Text);
+    font-weight: var(--FontWeight-TripleBoxesTitle-Text);
+    color: var(--Color-TripleBoxesTitleAnimated-Text);
+    -webkit-text-stroke: var(--WebStroke-TripleBoxesTitle-Text);
+    text-transform: var(--TextTranform-TripleBoxesTitle-Text);
 }
-
 
 .TripleBoxes__Title::before {
     content: attr(data-text);
@@ -188,8 +233,8 @@ a {
     left: 0;
     width: 0;
     height: 100%;
-    color: var(--ColorBefore-TripleBoxesTitle-Text) ;
-    -webkit-text-stroke: var(--BeforeWebStroke-TripleBoxesTitle-Text );
+    color: var(--ColorBefore-TripleBoxesTitle-Text);
+    -webkit-text-stroke: var(--BeforeWebStroke-TripleBoxesTitle-Text);
     border-right: var(--BorderRight-TripleBoxesTitle-Text);
     overflow: var(--Overflow-TripleBoxesTitle-Text);
     animation: var(--Animationn-TripleBoxesTitle-Text);
@@ -209,8 +254,6 @@ a {
     }
 }
 
-
-
 .ContainerTripleCards {
     width: 100%;
     height: 560px;
@@ -229,14 +272,25 @@ a {
 }
 
 .TripleCards:hover {
-    height: 450px;
+    height: var(--Height-TripleBoxesHover-BigBoxes);
 }
 
 .TripleCards__Lines {
     position: absolute;
     inset: 0;
-    background-color: #000;
     overflow: hidden;
+}
+
+.TripleCards__Lines--FirstBox {
+    background: var(--ColorStaticBigBox-TripleBoxesFirst-Border);
+}
+
+.TripleCards__Lines--SecondBox {
+    background: var(--ColorStaticBigBox-TripleBoxesSecond-Border);
+}
+
+.TripleCards__Lines--ThirdBox {
+    background: var(--ColorStaticBigBox-TripleBoxesThird-Border);
 }
 
 .TripleCards__Lines::before {
@@ -246,11 +300,22 @@ a {
     left: 50%;
     width: 600px;
     height: 120px;
-    background: linear-gradient(transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
-    animation: AquaBorder 4s linear infinite;
+    animation: AnimatedBorderBigBox 4s linear infinite;
 }
 
-@keyframes AquaBorder {
+.TripleCards__Lines--FirstBox::before {
+    background: var(--ColorAnimatedBigBox-TripleBoxesFirst-Border);
+}
+
+.TripleCards__Lines--SecondBox::before {
+    background: var(--ColorAnimatedBigBox-TripleBoxesSecond-Border);
+}
+
+.TripleCards__Lines--ThirdBox::before {
+    background: var(--ColorAnimatedBigBox-TripleBoxesThird-Border);
+}
+
+@keyframes AnimatedBorderBigBox {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
@@ -264,9 +329,19 @@ a {
     content: ' ';
     position: absolute;
     inset: 3px;
-    background-color: #292929;
 }
 
+.TripleCards__Lines--FirstBox::after {
+    background-color: var(--ColorBigBox-TripleBoxesFirst-Bg);
+}
+
+.TripleCards__Lines--SecondBox::after {
+    background-color: var(--ColorBigBox-TripleBoxesSecond-Bg);
+}
+
+.TripleCards__Lines--ThirdBox::after {
+    background-color: var(--ColorBigBox-TripleBoxesThird-Bg);
+}
 
 .TripleCards__ImageBox {
     position: absolute;
@@ -275,15 +350,27 @@ a {
     transform: translateX(-50%);
     width: 150px;
     height: 150px;
-    background-color: #000;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;
 }
 
+.TripleCards__ImageBox--FirstBox {
+    background: var(--ColorStaticSmallBox-TripleBoxesFirst-Border);
+}
+
+.TripleCards__ImageBox--SecondBox {
+    background: var(--ColorStaticSmallBox-TripleBoxesSecond-Border);
+}
+
+.TripleCards__ImageBox--ThirdBox {
+    background: var(--ColorStaticSmallBox-TripleBoxesThird-Border);
+}
+
+
 .TripleCards:hover .TripleCards__ImageBox {
-    width: 250px;
-    height: 250px;
+    width: var(--Width-TripleBoxesHover-ImageBox);
+    height: var(--Height-TripleBoxesHover-ImageBox);
 }
 
 .TripleCards__ImageBox::before {
@@ -294,8 +381,21 @@ a {
     width: 500px;
     height: 150px;
     transform: translate(-50%, -50%);
-    background: linear-gradient(transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent);
     animation: PinkBorder 6s linear infinite;
+}
+
+.TripleCards__ImageBox--FirstBox::before {
+    background: var(--ColorAnimatedSmallBox-TripleBoxesFirst-Border);
+}
+
+
+.TripleCards__ImageBox--SecondBox::before {
+    background: var(--ColorAnimatedSmallBox-TripleBoxesSecond-Border);
+}
+
+
+.TripleCards__ImageBox--ThirdBox::before {
+    background: var(--ColorAnimatedSmallBox-TripleBoxesThird-Border);
 }
 
 @keyframes PinkBorder {
@@ -312,7 +412,18 @@ a {
     content: ' ';
     position: absolute;
     inset: 3px;
-    background-color: #292929;
+}
+
+.TripleCards__ImageBox--FirstBox::after {
+    background-color: var(--ColorSmallBox-TripleBoxesFirst-Bg);
+}
+
+.TripleCards__ImageBox--SecondBox::after {
+    background-color: var(--ColorSmallBox-TripleBoxesSecond-Bg);
+}
+
+.TripleCards__ImageBox--ThirdBox::after {
+    background-color: var(--ColorSmallBox-TripleBoxesThird-Bg);
 }
 
 .TripleCards__Image {
@@ -326,7 +437,7 @@ a {
 }
 
 .TripleCards:hover .TripleCards__Image {
-    filter: grayscale(0);
+    filter: var(--Filter-TripleBoxes-GrayScale);
 }
 
 .TripleCards__Content {
@@ -348,7 +459,7 @@ a {
 }
 
 .TripleCards:hover .TripleCards__Details {
-    transform: translateY(0px);
+    transform: var(--Transform-TripleBoxes-Content);
 
 }
 
@@ -357,6 +468,18 @@ a {
     font-weight: 600;
     color: #45f3ff;
     line-height: 1.2em;
+}
+
+.TripleCards__PersonName--FirstBox {
+    color: var(--Color-TripleBoxesFirst-PersonName);
+}
+
+.TripleCards__PersonName--SecondBox {
+    color: var(--Color-TripleBoxesSecond-PersonName);
+}
+
+.TripleCards__PersonName--ThirdBox {
+    color: var(--Color-TripleBoxesThird-PersonName);
 }
 
 .TripleCards__PersonSkill {
@@ -373,10 +496,22 @@ a {
 
 .TripleCards__SocialNumber {
     font-size: 1em;
-    color: #45f3ff;
     line-height: 1.2em;
     font-weight: 600;
 }
+
+.TripleCards__SocialNumber--FirstBox {
+    color: var(--Color-TripleBoxesFirst-SocialNumber);
+}
+
+.TripleCards__SocialNumber--SecondBox {
+    color: var(--Color-TripleBoxesSecond-SocialNumber);
+}
+
+.TripleCards__SocialNumber--ThirdBox {
+    color: var(--Color-TripleBoxesThird-SocialNumber);
+}
+
 
 .TripleCards__Factor {
     font-size: 0.85em;
@@ -397,10 +532,21 @@ a {
     border-radius: 5px;
     font-size: 1em;
     font-weight: 500;
-    background-color: #45f3ff;
-    color: #222;
+    color: #000;
     cursor: pointer;
     opacity: 0.9;
+}
+
+.TripleCards__Button--FirstBox {
+    background-color: var(--BgColor-TripleBoxesFirst-Button);
+}
+
+.TripleCards__Button--SecondBox {
+    background-color: var(--BgColor-TripleBoxesSecond-Button);
+}
+
+.TripleCards__Button--ThirdBox {
+    background-color: var(--BgColor-TripleBoxesThird-Button);
 }
 
 .TripleCards__Button--WhiteColor {
@@ -417,13 +563,14 @@ a {
 .SlideContent {
     width: 100%;
     height: 235px;
-    color: #fff;
-    background-color: #1d5f8f;
+    color: var(--Color-SlideContent-Text);
+    background: var(--Color-SlideContent-Bg);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .SlideContent--CenterCenter {
     height: 135px;
@@ -431,18 +578,18 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .SlideContent__firstP {
     font-weight: 300;
     font-size: 27px;
+    font-family: var(--FontFamily-SlideContentFirstP-Text);
 }
 
 .SlideContent__SecondP {
     margin-top: 4.5px;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--FontFamily-SlideContentSecondP-Text);
 }
 
 .SlideContent__Link {
@@ -453,16 +600,14 @@ a {
     padding: 15px 30px 13px;
     border-radius: 100px;
     font-family: 'Open Sans', sans-serif;
+    display: var(--Display--SixCardsButton--UI1);
 }
 
 
-
-/*--------------Start Of SixthBoxes --------------*/
-
-.SectionSixthBoxes {
+/*--------------Start Of SixBoxes--------------*/
+.SectionSixBoxes {
     width: 100%;
     min-height: 100vh;
-    background-color: #08001b;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -470,8 +615,8 @@ a {
     gap: 50px;
 }
 
-.SectionSixthBoxes__FirstRow,
-.SectionSixthBoxes__SecondRow {
+.SectionSixBoxes__FirstRow,
+.SectionSixBoxes__SecondRow {
     width: 100%;
     padding: 10px 0;
     display: flex;
@@ -479,22 +624,10 @@ a {
     align-items: center;
 }
 
-/* .SectionSixthBoxes__FirstRow
-{
-    background-color: #4311b9;
-
-}
-
-.SectionSixthBoxes__SecondRow
-{
-    background-color: red;
-} */
-
-.SixthCards {
+.SixCards {
     width: 394px;
     height: 394px;
     position: relative;
-    background-color: #0c002b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -502,18 +635,42 @@ a {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
-.SixthCards::before {
+.SixCards__FirstBox {
+    background-color: var(--Color--SixBoxesFirst-Bg);
+}
+
+.SixCards__SecondBox {
+    background-color: var(--Color--SixBoxesSecond-Bg);
+}
+
+.SixCards__ThirdBox {
+    background-color: var(--Color--SixBoxesThird-Bg);
+}
+
+.SixCards__FourthBox {
+    background-color: var(--Color--SixBoxesFourth-Bg);
+}
+
+.SixCards__FifthBox {
+    background-color: var(--Color--SixBoxesFifth-Bg);
+}
+
+.SixCards__SixthBox {
+    background-color: var(--Color--SixBoxesSixth-Bg);
+}
+
+.SixCards::before {
     content: ' ';
     position: absolute;
     top: 2px;
     left: 2px;
     bottom: 2px;
     width: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--Color-SixBoxesBefore-Bg);
     pointer-events: none;
 }
 
-.SixthCards__Content {
+.SixCards__Content {
     width: 90%;
     height: 90%;
     padding: 4%;
@@ -526,117 +683,168 @@ a {
     gap: 15px;
 }
 
-.SixthCards__Icon {
-    position: absolute;
-    top: 25%;
-    right: 70px;
+.SixCards__Icon {
+    position: var(--Position-SixCard-Icon);
+    top: 26%;
+    right: 40px;
     font-size: 4em;
     font-weight: 800;
-    color: #1779ff;
+    color: var(--Color-SixCard-Icon);
     z-index: 1;
-    opacity: 0.1;
+    opacity: var(--Opacity-SixCard-Icon);
     transition: 0.5s;
 }
 
-.SixthCards:hover .SixthCards__Icon {
-    opacity: 1;
-    transform: translateY(-70px);
+.SixBoxes__FirstBoxIcon--Color {
+    color: var(--Color-SixCardFirst-Icon);
 }
 
-.SixthCards__Title {
+.SixBoxes__SecondBoxIcon--Color {
+    color: var(--Color-SixCardSecond-Icon);
+}
+
+.SixBoxes__ThirdBoxIcon--Color {
+    color: var(--Color-SixCardThird-Icon);
+}
+
+.SixBoxes__FourthBoxIcon--Color {
+    color: var(--Color-SixCardFourth-Icon);
+}
+
+.SixBoxes__FifthBoxIcon--Color {
+    color: var(--Color-SixCardFifth-Icon);
+}
+
+.SixBoxes__SixthBoxIcon--Color {
+    color: var(--Color-SixCardSixth-Icon);
+}
+
+.SixCards:hover .SixCards__Icon {
+    opacity: 1;
+    transform: var(--Transform-SixCardHover-Icon);
+}
+
+.SixCards__Title {
     position: relative;
-    font-size: 1.5em;
-    color: #fff;
+    font-family: var(--FontFamily-SixCardsTitle-Text);
+    font-size: var(--FontSize-SixCardsTitle-Text);
+    font-weight: var(--FontWeight-SixCardsTitle-Text);
+    color: var(--Color-SixCardsTitle-Text);
     z-index: 2;
-    opacity: 0.5;
+    opacity: var(--Opacity-SixCardTitleandDescription-Text);
     letter-spacing: 1px;
     transition: 0.5s;
 }
 
-.SixthCards__Desciption {
+.SixCards__FirstCardTitle--Color {
+    color: var(--Color-SixCardFirst-Title);
+}
+
+.SixCards__SecondCardTitle--Color {
+    color: var(--Color-SixCardSecond-Title);
+}
+
+.SixCards__ThirdCardTitle--Color {
+    color: var(--Color-SixCardThird-Title);
+}
+
+.SixCards__FourthCardTitle--Color {
+    color: var(--Color-SixCardFourth-Title);
+}
+
+.SixCards__FifthCardTitle--Color {
+    color: var(--Color-SixCardFifth-Title);
+}
+
+.SixCards__SixthCardTitle--Color {
+    color: var(--Color-SixCardSixth-Title);
+}
+
+.SixCards__Desciption {
     position: relative;
-    font-size: 1em;
-    font-weight: 300;
-    color: #fff;
+    font-family: var(--FontFamily-SixCardsDescription-Text);
+    font-size: var(--FontSize-SixCardsDescription-Text);
+    font-weight: var(--FontWeight-SixCardsDescription-Text);
+    color: var(--Color-SixCardsDescription-Text);
     z-index: 2;
-    opacity: 0.5;
+    opacity: var(--Opacity-SixCardTitleandDescription-Text);
     letter-spacing: 1px;
     transition: 0.5s;
     margin-top: 20px;
 }
 
-.SixthCards:hover .SixthCards__Title,
-.SixthCards:hover .SixthCards__Desciption {
+.SixCards:hover .SixCards__Title,
+.SixCards:hover .SixCards__Desciption {
     opacity: 1;
 }
 
-.SixthCards__Link {
-    display: inline-block;
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
+.SixCards__Link {
+    display: var(--Display--SixCardsButton--UI1);
     font-weight: 500;
-    padding: 8px 15px;
-    color: #0c002b;
+    color: #000;
+    min-width: 139px;
+    font-size: 13px;
+    padding: 15px 30px 13px;
+    border-radius: 100px;
+    font-family: 'Open Sans', sans-serif;
     background-color: #fff;
     text-transform: uppercase;
-
 }
 
-.SixthCards__Border {
+.SixCards__Border {
     transition: 0.5s;
     opacity: 0;
 }
 
-.SixthCards:hover .SixthCards__Border {
+.SixCards:hover .SixCards__Border {
     opacity: 1;
 }
 
-.SixthCards__Border--Top {
+/* --- First Box --- */
+
+.SixCards__Border--Top {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, transparent, #1779ff);
-    animation: SixthCardsBorderTop 2s linear infinite;
-
+    background: var(--SnakeBorder-SixCards-Top);
+    animation: SixCardsBorderTop 2s linear infinite;
 }
 
-.SixthCards__Border--Right {
+.SixCards__Border--Right {
     position: absolute;
     top: 0;
     right: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, #1779ff);
-    animation: SixthCardsBorderRight 2s linear infinite;
+    background: var(--SnakeBorder-SixCards-Right);
+    animation: SixCardsBorderRight 2s linear infinite;
     animation-delay: 1s;
 }
 
-.SixthCards__Border--Bottom {
+.SixCards__Border--Bottom {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to left, transparent, #1779ff);
-    animation: SixthCardsBorderBottom 2s linear infinite;
+    background: var(--SnakeBorder-SixCards-Bottom);
+    animation: SixCardsBorderBottom 2s linear infinite;
 }
 
-.SixthCards__Border--Left {
+.SixCards__Border--Left {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to top, transparent, #1779ff);
-    animation: SixthCardsBorderLeft 2s linear infinite;
+    background: var(--SnakeBorder-SixCards-Left);
+    animation: SixCardsBorderLeft 2s linear infinite;
     animation-delay: 1s;
-
-
 }
 
-@keyframes SixthCardsBorderTop {
+@keyframes SixCardsBorderTop {
     0% {
         transform: translateX(-100%);
     }
@@ -647,7 +855,7 @@ a {
     }
 }
 
-@keyframes SixthCardsBorderRight {
+@keyframes SixCardsBorderRight {
     0% {
         transform: translateY(-100%);
     }
@@ -658,7 +866,7 @@ a {
     }
 }
 
-@keyframes SixthCardsBorderBottom {
+@keyframes SixCardsBorderBottom {
     0% {
         transform: translateX(100%);
     }
@@ -669,7 +877,7 @@ a {
     }
 }
 
-@keyframes SixthCardsBorderLeft {
+@keyframes SixCardsBorderLeft {
     0% {
         transform: translateY(100%);
     }
@@ -680,24 +888,20 @@ a {
     }
 }
 
+/*-------------- End Of SixBoxes--------------*/
 
-
-
-
-
-/*-------------- End Of SixthBoxes --------------*/
 
 
 .SlideContent--lessWidth {
     width: 100%;
     height: 162px;
-    color: #fff;
-    background-color: #084a79;
+    color: var(--Color-SlideContentLessWidth-Text);
+    background: var(--Color-SlideContentLessWidth-Bg);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--FontFamily-SlideContentLessWidth-Text);
 }
 
 .InnerContainer--WithPaddingTop--RowDirection {
