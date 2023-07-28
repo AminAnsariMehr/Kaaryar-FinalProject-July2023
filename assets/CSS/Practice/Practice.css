@@ -65,6 +65,32 @@ a {
     flex-direction: column;
 }
 
+.GoUp__Icon {
+    position: fixed;
+    top: 92%;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #dedede;
+    border-radius: 2px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.GoUp__Link {
+    color: #b0b0b0;
+    font-size: 22px;
+}
+
+.GoUp__Link:hover {
+    color: #000;
+}
+
+
+
 
 /********** Start Of Service And Details **********/
 .ServiceAndDetails {
