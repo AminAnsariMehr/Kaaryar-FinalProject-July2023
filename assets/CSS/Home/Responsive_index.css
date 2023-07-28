@@ -1,7 +1,13 @@
 @media (max-width:1235px) {
+    .Header {
+        overflow-x: hidden;
+    }
 
+    .InnerContainer--WithoutPaddingTop {
+        width: auto;
+        padding: 0;
+    }
 
-    /************* Start Of Header *************/
     .SocialMedia-ColorPallet {
         justify-content: center;
     }
@@ -80,8 +86,8 @@
     .Menu {
         height: 100vh;
         background-color: var(--Color-MenuResponsive-Bg);
-        opacity: 0.9;
-        padding: 100px 50px 20px;
+        padding: 0 50px 20px;
+        opacity: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -110,6 +116,12 @@
         padding: 0 40px;
     }
 
+
+    .Slogan__text {
+        margin: 50px 0;
+    }
+
+
     .Slogan__Title--size-big {
         font-size: 1.5em;
     }
@@ -124,120 +136,230 @@
         width: var(--Width-MagicBoxes-Responsive);
     }
 
-    /************* End Of Header **************/
-
-
-
-
-    /************* Start Of Main **************/
-
-    
-    .InnerContainer--WithPaddingTopPart1
-    {
+    .InnerContainer--WithPaddingTopPart1 {
         height: auto;
-        background-color: red;
-        padding: 5px 5px 100px 5px;
+        padding: 5px;
     }
 
-    .OperateSection__Title
-    {
-        font-size: 40px;
+    .InnerContainer--WithPaddingTopPart3 {
+        padding: 30px 30px 100px 30px;
     }
 
-    .OperateSection__Desciption
-    {
+    .OperateSection__Title {
+        font-size: 28px;
+    }
+
+    .OperateSection__Desciption {
         font-size: 13px;
     }
 
-    .TripleBoxes__Title
-    {
-        font-family: ' open sans';
+    .SlideContent {
+        height: 300px;
+        padding: 30px;
+        justify-content: space-around;
     }
 
+    .SlideContent--CenterCenter {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        height: auto;
+        gap: 20px;
+        border: 1px solid #fff67ec4;
+        box-shadow: 0 0 10px #fff67ec4 ,
+                            0 0 15px #fff67ec4 ,
+                            0 0 20px #fff67ec4 ,
+                            0 0 25px #fff67ec4;
+    }
 
+    .SlideContent__Number {
+        font-size: 34px;
+    }
 
+    .SlideContent__NumberDescription {
+        font-size: 13px;
+    }
 
+    .Paragraphcontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .SlideContent__firstP {
+        font-size: 20px;
+    }
+
+    .SlideContent__SecondP {
+        font-size: 13px;
+    }
+
+    .TripleBoxes__Title {
+        font-family: ' open sans';
+        font-size: 3.5em;
+    }
+
+    .OperateSection--First {
+        margin-top: 20px;
+    }
 
     .TripleBoxes {
         width: 100%;
         height: auto;
-        min-height: 670px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
-        gap: 100px;
-        background-color: yellow;
     }
 
     .ContainerTripleCards {
         width: 100%;
-        height: 560px;
+        height: 1100px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        gap: 170px;
+        gap: 150px;
+        padding-top: 100px;
+    }
+
+    .TripleCards {
+        width: 280px;
+        height: 160px;
+    }
+
+    .TripleCards:hover {
+        height: 380px;
+    }
+
+    .TripleCards__ImageBox {
+        width: 115px;
+        height: 115px;
+    }
+
+    .TripleCards:hover .TripleCards__ImageBox {
+        width: 200px;
+        height: 200px;
     }
 
 
-
-
-    /************** End Of Main **************/
-
-
-
-
-
-
-
-    @media (max-width:400px) {
-
-        .Logo {
-            width: fit-content;
-            padding-top: 10px;
-            margin-top: -3px;
-            margin-left: 8px;
-        }
-
-        .Logo__Image {
-            width: 48px;
-            height: 28px;
-        }
-
-        .Logo_Text {
-            margin-left: 3px;
-        }
-
-        .Logo__Title {
-            font-size: 18px;
-            margin-top: -6px;
-        }
-
-        .Logo__Description {
-            font-size: 10px;
-        }
-
-        .SearchSection {
-            transform: translate(18px, 50%);
-        }
-
-        .SearchSection__LabelSearchIcon {
-            font-size: 1.2rem;
-            margin-top: -4px;
-        }
-
-        .BurgerMenu__Icon {
-            gap: 5px;
-        }
-
-        .BurgerMenu__Bar {
-            width: 25px;
-            height: 4px;
-        }
-
+    .TripleCards__ImageBox::before {
+        width: 600px;
+        height: 100px;
     }
 
+    .TripleCards__Lines::before {
+        width: 600px;
+        height: 150px;
+    }
+
+    .TripleCards__PersonSkill {
+        font-size: 0.7em;
+    }
+
+    .TripleCards__Btn {
+        justify-content: center;
+    }
+
+    .SectionSixBoxes {
+        gap: 5px;
+    }
+
+    .SectionSixBoxes__FirstRow,
+    .SectionSixBoxes__SecondRow {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .SlideContent--lessWidth {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .InnerContainer--WithPaddingTop--RowDirection {
+        padding: 0;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .FooterLinks {
+        width: 100%;
+    }
+
+    .ContactList__LinksTitle--Hover {
+        transform: translate(0, -70%);
+    }
+}
 
 
+
+/* ----------------- Media 400px ----------------- */
+
+@media (max-width:400px) {
+
+    .Logo {
+        width: fit-content;
+        padding-top: 10px;
+        margin-top: -3px;
+        margin-left: 8px;
+    }
+
+    .Logo__Image {
+        width: 48px;
+        height: 28px;
+    }
+
+    .Logo_Text {
+        margin-left: 3px;
+    }
+
+    .Logo__Title {
+        font-size: 18px;
+        margin-top: -6px;
+    }
+
+    .Logo__Description {
+        font-size: 10px;
+    }
+
+    .SearchSection {
+        transform: translate(18px, 50%);
+    }
+
+    .SearchSection__LabelSearchIcon {
+        font-size: 1.2rem;
+        margin-top: -4px;
+    }
+
+    .BurgerMenu__Icon {
+        gap: 5px;
+    }
+
+    .BurgerMenu__Bar {
+        width: 25px;
+        height: 4px;
+    }
+
+    .ContactList {
+        gap: 15px;
+    }
+
+    .ContactList__Links {
+        width: 32px;
+        height: 32px;
+    }
+
+    .SixCards
+    {
+        width: 300px;
+        height: 400px ;
+    }
+
+    .SixCards__Icon 
+    {
+        top: 25%;
+        right: 10px;
+    }
 }

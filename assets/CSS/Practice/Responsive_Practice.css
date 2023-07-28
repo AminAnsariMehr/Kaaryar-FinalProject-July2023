@@ -57,6 +57,7 @@
     .Menu__Links {
         width: 100%;
         text-align: center;
+        color: #000;
     }
 
     .BurgerMenu__Icon {
@@ -66,8 +67,8 @@
     .Menu {
         height: 100vh;
         background-color: var(--Color-MenuResponsive-Bg);
-        opacity: 0.9;
-        padding: 100px 50px 20px;
+        opacity: 1;
+        padding: 0px 50px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
