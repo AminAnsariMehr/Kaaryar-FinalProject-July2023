@@ -165,11 +165,6 @@
         border-radius: 10px;
         height: auto;
         gap: 20px;
-        border: 1px solid #fff67ec4;
-        box-shadow: 0 0 10px #fff67ec4 ,
-                            0 0 15px #fff67ec4 ,
-                            0 0 20px #fff67ec4 ,
-                            0 0 25px #fff67ec4;
     }
 
     .SlideContent__Number {
